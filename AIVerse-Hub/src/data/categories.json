@@ -1,0 +1,10 @@
+[
+  { "id": "chatbots", "name": "AI Chatbots", "icon": "MessageSquare", "count": 124 },
+  { "id": "writing", "name": "AI Writing", "icon": "PenTool", "count": 85 },
+  { "id": "image", "name": "AI Image Gen", "icon": "Image", "count": 150 },
+  { "id": "video", "name": "AI Video Gen", "icon": "Video", "count": 45 },
+  { "id": "voice", "name": "AI Voice", "icon": "Mic", "count": 32 },
+  { "id": "coding", "name": "AI Coding", "icon": "Code", "count": 67 },
+  { "id": "marketing", "name": "AI Marketing", "icon": "TrendingUp", "count": 92 },
+  { "id": "productivity", "name": "AI Productivity", "icon": "Zap", "count": 118 }
+]
