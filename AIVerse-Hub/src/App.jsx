@@ -12,6 +12,7 @@ import ContentPage from './pages/ContentPage';
 import Dashboard from './pages/Dashboard';
 import Compare from './pages/Compare';
 import Prompts from './pages/Prompts';
+import AIAssistant from './pages/AIAssistant';
 import CommandPalette from './components/CommandPalette';
 import './styles/globals.css';
 import './styles/cards.css';
@@ -32,6 +33,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/prompts" element={<Prompts />} />
+          <Route path="/ai-assistant" element={<AIAssistant />} />
           
           {/* New Footer Pages */}
           <Route path="/trending" element={<ContentPage pageKey="trending" />} />

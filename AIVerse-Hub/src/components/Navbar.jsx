@@ -56,6 +56,14 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
+          <Link 
+            to="/ai-assistant" 
+            className={`nav-link ${location.pathname === '/ai-assistant' ? 'active' : ''}`}
+            onClick={() => setMobileMenuOpen(false)}
+            style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--accent-primary)', fontWeight: 'bold' }}
+          >
+            <Sparkles size={16} /> AI Assistant
+          </Link>
         </div>
 
         <div className="nav-actions">
