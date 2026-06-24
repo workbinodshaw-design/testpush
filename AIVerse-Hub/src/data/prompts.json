@@ -1,0 +1,50 @@
+[
+  {
+    "id": "p1",
+    "title": "SEO Optimized Blog Writer",
+    "category": "ChatGPT Prompts",
+    "prompt": "Act as an expert SEO blog writer. Write a comprehensive 1500-word blog post about [TOPIC]. Include a catchy title, introduction, 5 subheadings, and a conclusion. Naturally integrate the following keywords: [KEYWORDS]. Ensure the tone is engaging and professional."
+  },
+  {
+    "id": "p2",
+    "title": "React Component Generator",
+    "category": "Claude Prompts",
+    "prompt": "Write a complete, production-ready React functional component for a [COMPONENT NAME]. Use Tailwind CSS for styling. Include prop validation, loading states, error handling, and comments explaining complex logic. Make sure the component is fully accessible (a11y compliant)."
+  },
+  {
+    "id": "p3",
+    "title": "Cinematic Cyberpunk City",
+    "category": "Midjourney Prompts",
+    "prompt": "A sprawling cyberpunk metropolis at night, neon lights reflecting in rain puddles, volumetric fog, flying cars leaving light trails, highly detailed, 8k resolution, cinematic lighting, dramatic angles, Unreal Engine 5 render style --ar 16:9 --v 6.0"
+  },
+  {
+    "id": "p4",
+    "title": "Cold Email Outreach",
+    "category": "ChatGPT Prompts",
+    "prompt": "Write a highly converting B2B cold email sequence (3 emails) targeting [TARGET AUDIENCE]. The goal is to book a 15-minute discovery call for our SaaS product [PRODUCT NAME]. Keep it short, punchy, and focused on their pain points."
+  },
+  {
+    "id": "p5",
+    "title": "Code Refactoring Expert",
+    "category": "Claude Prompts",
+    "prompt": "Analyze the following code block. Identify performance bottlenecks, security vulnerabilities, and code smells. Then, rewrite the code to be clean, modular, and optimized. Explain the changes you made and why: [INSERT CODE]"
+  },
+  {
+    "id": "p6",
+    "title": "Hyper-realistic Portrait",
+    "category": "Midjourney Prompts",
+    "prompt": "Hyper-realistic portrait of an elderly wizard, intricate facial details, deep wrinkles, glowing blue eyes, wearing ancient tattered robes, softly lit by candlelight, dark background, shot on 85mm lens, f/1.8, extremely detailed, 8k --ar 4:5 --style raw"
+  },
+  {
+    "id": "p7",
+    "title": "Product Marketing Strategy",
+    "category": "ChatGPT Prompts",
+    "prompt": "Act as a Chief Marketing Officer. Create a comprehensive 30-day go-to-market strategy for launching [PRODUCT NAME] to [TARGET AUDIENCE]. Include channels to use, budget allocation percentages, and key performance indicators (KPIs) to track."
+  },
+  {
+    "id": "p8",
+    "title": "Data Analysis Summarizer",
+    "category": "Claude Prompts",
+    "prompt": "Review the following dataset/CSV data. Extract the top 5 key insights, identify any unusual trends or anomalies, and suggest 3 actionable business recommendations based on this data: [INSERT DATA]"
+  }
+]

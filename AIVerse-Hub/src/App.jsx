@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -9,6 +9,10 @@ import CategoryDetails from './pages/CategoryDetails';
 import SubmitTool from './pages/SubmitTool';
 import ToolDetails from './pages/ToolDetails';
 import ContentPage from './pages/ContentPage';
+import Dashboard from './pages/Dashboard';
+import Compare from './pages/Compare';
+import Prompts from './pages/Prompts';
+import CommandPalette from './components/CommandPalette';
 import './styles/globals.css';
 import './styles/cards.css';
 
@@ -16,6 +20,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <CommandPalette />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,6 +29,9 @@ function App() {
           <Route path="/categories/:id" element={<CategoryDetails />} />
           <Route path="/submit" element={<SubmitTool />} />
           <Route path="/tool/:id" element={<ToolDetails />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/prompts" element={<Prompts />} />
           
           {/* New Footer Pages */}
           <Route path="/trending" element={<ContentPage pageKey="trending" />} />
