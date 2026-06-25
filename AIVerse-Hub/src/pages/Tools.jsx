@@ -4,6 +4,8 @@ import { Search, Filter, Star, ArrowDownAZ, ArrowUpAZ, Loader } from 'lucide-rea
 import ToolCard from '../components/ToolCard';
 import toolsData from '../data/tools.json';
 import categoriesData from '../data/categories.json';
+import { db } from '../firebase';
+import { collection, query, where, getDocs } from 'firebase/firestore';
 
 const Tools = () => {
   const location = useLocation();
@@ -13,6 +15,22 @@ const Tools = () => {
   const [minRating, setMinRating] = useState(0);
   const [sortOption, setSortOption] = useState('default');
   const [visibleCount, setVisibleCount] = useState(24);
+  const [cloudTools, setCloudTools] = useState([]);
+
+  // Fetch approved community tools dynamically from Firestore
+  useEffect(() => {
+    const fetchCloudTools = async () => {
+      try {
+        const q = query(collection(db, 'tools'), where('isCommunitySubmitted', '==', true));
+        const snapshot = await getDocs(q);
+        const tools = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setCloudTools(tools);
+      } catch (err) {
+        console.error("Failed to fetch cloud tools:", err);
+      }
+    };
+    fetchCloudTools();
+  }, []);
 
   // Read from URL on mount
   useEffect(() => {
@@ -38,12 +56,15 @@ const Tools = () => {
     setVisibleCount(24);
   }, [selectedCategory, minRating, sortOption]);
 
+  // Combine static local JSON tools with live cloud-approved tools
+  const allTools = [...cloudTools, ...toolsData];
+
   // Apply Filtering
-  let filteredTools = toolsData.filter(tool => {
+  let filteredTools = allTools.filter(tool => {
     const matchesSearch = tool.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           tool.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === 'All' || tool.category === selectedCategory;
-    const matchesRating = parseFloat(tool.rating) >= minRating;
+    const matchesRating = tool.rating ? parseFloat(tool.rating) >= minRating : true; // community tools might not have ratings yet
     return matchesSearch && matchesCategory && matchesRating;
   });
 
@@ -63,7 +84,7 @@ const Tools = () => {
     <div className="container section-padding" style={{ paddingTop: '120px', minHeight: '80vh' }}>
       <div className="section-header">
         <h1 className="section-title">Discover <span className="gradient-text">AI Tools</span></h1>
-        <p className="section-subtitle">Search, filter, and compare {toolsData.length}+ AI tools to find exactly what you need.</p>
+        <p className="section-subtitle">Search, filter, and compare {allTools.length}+ AI tools to find exactly what you need.</p>
       </div>
 
       <div className="search-filters glass-panel" style={{ padding: '1.5rem', marginBottom: '3rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>

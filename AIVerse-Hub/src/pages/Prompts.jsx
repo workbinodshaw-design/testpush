@@ -57,7 +57,7 @@ const Prompts = () => {
       </div>
 
       {/* Prompts Grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '2rem' }}>
+      <div className="tools-grid">
         {filteredPrompts.map(prompt => (
           <div key={prompt.id} className="glass-panel" style={{ display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden' }}>
             <div style={{ padding: '1.5rem', borderBottom: '1px solid var(--glass-border)' }}>

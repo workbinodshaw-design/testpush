@@ -24,15 +24,15 @@ const AIAssistant = () => {
         <p className="section-subtitle">Describe what you need, and our intelligent engine will find the perfect AI tools for your workflow.</p>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '2rem', alignItems: 'start' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'flex-start' }}>
         
         {/* Main Chat Interface */}
-        <div style={{ order: 1 }}>
+        <div style={{ order: 1, flex: '1 1 400px', minWidth: '0' }}>
           <AssistantChat onNewSearch={handleNewSearch} />
         </div>
 
         {/* Sidebar */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', order: 2 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', order: 2, flex: '1 1 300px', minWidth: '0' }}>
           
           {/* Trending Searches */}
           <div className="glass-panel" style={{ padding: '1.5rem' }}>

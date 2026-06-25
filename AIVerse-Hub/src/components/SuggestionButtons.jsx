@@ -30,7 +30,8 @@ const SuggestionButtons = ({ onSelect }) => {
               gap: '0.4rem',
               whiteSpace: 'nowrap',
               background: 'var(--bg-tertiary)',
-              border: '1px solid var(--glass-border)'
+              border: '1px solid var(--glass-border)',
+              flexShrink: 0
             }}
           >
             <Icon size={14} className="text-purple-400" /> {item.label}

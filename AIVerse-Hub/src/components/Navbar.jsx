@@ -1,27 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Moon, Sun, Menu, X, Search, Sparkles, UserCircle } from 'lucide-react';
+import { Menu, X, Search, Sparkles, UserCircle, LogOut } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 import '../styles/navbar.css';
 
 const Navbar = () => {
-  const [isDark, setIsDark] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const { currentUser, logout } = useAuth();
 
   useEffect(() => {
+    document.documentElement.setAttribute('data-theme', 'light');
+    
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-  };
 
   const openPalette = () => {
     window.dispatchEvent(new Event('open-command-palette'));
@@ -56,6 +54,16 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
+          {currentUser?.email === 'work.binodshaw@gmail.com' && (
+            <Link 
+              to="/admin" 
+              className={`nav-link ${location.pathname === '/admin' ? 'active' : ''}`}
+              onClick={() => setMobileMenuOpen(false)}
+              style={{ color: '#ef4444', fontWeight: 'bold' }}
+            >
+              Admin Panel
+            </Link>
+          )}
           <Link 
             to="/ai-assistant" 
             className={`nav-link ${location.pathname === '/ai-assistant' ? 'active' : ''}`}
@@ -81,18 +89,33 @@ const Navbar = () => {
             onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--glass-border)'}
           >
             <Search size={16} />
-            <span style={{ fontSize: '0.9rem' }}>Search...</span>
-            <span style={{ fontSize: '0.7rem', background: 'var(--bg-secondary)', padding: '0.1rem 0.3rem', borderRadius: '4px', border: '1px solid var(--glass-border)' }}>Ctrl+K</span>
+            <span className="hide-mobile" style={{ fontSize: '0.9rem' }}>Search...</span>
+            <span className="hide-mobile" style={{ fontSize: '0.7rem', background: 'var(--bg-secondary)', padding: '0.1rem 0.3rem', borderRadius: '4px', border: '1px solid var(--glass-border)' }}>Ctrl+K</span>
           </button>
 
-          <Link to="/submit" className="btn btn-primary" style={{ padding: '0.4rem 1rem', fontSize: '0.9rem', borderRadius: '20px' }}>
+          <Link to="/submit" className="btn btn-primary hide-mobile" style={{ padding: '0.4rem 1rem', fontSize: '0.9rem', borderRadius: '20px' }}>
             Submit Tool
           </Link>
 
-          <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Theme">
-            {isDark ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-          
+          {currentUser ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginLeft: '0.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--text-primary)', fontSize: '0.9rem', fontWeight: '500' }}>
+                <UserCircle size={20} style={{ color: 'var(--accent-primary)' }} />
+                <span className="hide-mobile">{currentUser.displayName || 'User'}</span>
+              </div>
+              <button 
+                onClick={() => logout()}
+                style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.3rem' }}
+                title="Log Out"
+              >
+                <LogOut size={18} />
+              </button>
+            </div>
+          ) : (
+            <Link to="/login" className="btn btn-secondary" style={{ padding: '0.4rem 1rem', fontSize: '0.9rem', borderRadius: '20px', marginLeft: '0.5rem' }}>
+              Log In
+            </Link>
+          )}
           <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

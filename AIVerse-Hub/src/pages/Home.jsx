@@ -1,95 +1,142 @@
-import React from 'react';
-import { Flame, Zap, Award } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Flame, Zap, Award, Loader2 } from 'lucide-react';
+import { collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
+import { db } from '../firebase';
 import Hero from '../components/Hero';
 import ToolCard from '../components/ToolCard';
 import CategoryCard from '../components/CategoryCard';
-import toolsData from '../data/tools.json';
 import categoriesData from '../data/categories.json';
+import { motion } from 'framer-motion';
 
 const Home = () => {
-  // Extract lists based on the newly added dynamic badges
-  const trendingTools = toolsData.filter(tool => tool.badges?.includes('Trending')).slice(0, 6);
-  const newTools = toolsData.filter(tool => tool.badges?.includes('New')).slice(0, 6);
-  const editorPicks = toolsData.filter(tool => tool.badges?.includes('Editor Choice')).slice(0, 6);
+  const [trendingTools, setTrendingTools] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  // Dynamically fetch the Top 12 Tools from Firestore (Production RAG)
+  useEffect(() => {
+    const fetchTools = async () => {
+      try {
+        const toolsRef = collection(db, 'tools');
+        // Sort by upvotes (highest first), limit to 12 to save Firestore quota
+        const q = query(toolsRef, orderBy('upvotes', 'desc'), limit(12));
+        
+        const snapshot = await getDocs(q);
+        const liveTools = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setTrendingTools(liveTools);
+      } catch (error) {
+        console.error("Error fetching tools from cloud:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    fetchTools();
+  }, []);
 
   return (
     <div className="home-page">
       <Hero />
       
-      {/* Editor's Choice Section */}
-      <section className="section-padding container animate-reveal">
+      {/* Trending Today Section (LIVE CLOUD DATA) */}
+      <motion.section 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
+        className="section-padding container" 
+        style={{ position: 'relative', zIndex: 1 }}
+      >
         <div className="section-header">
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(93, 13, 24, 0.1)', color: '#5D0D18', padding: '0.5rem 1rem', borderRadius: '2rem', fontWeight: 600, marginBottom: '1rem' }}>
+            <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: '#5D0D18', animation: 'pulse-glow 2s infinite' }}></span>
+            LIVE CLOUD DATABASE
+          </div>
           <h2 className="section-title" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}>
-            <Award className="text-yellow-400" size={32} /> Editor's Choice
+            <Flame style={{ color: '#5D0D18' }} size={40} /> Trending Today
           </h2>
-          <p className="section-subtitle">Hand-selected premium AI tools that our team uses daily.</p>
+          <p className="section-subtitle">The most upvoted and popular AI tools around the globe right now.</p>
         </div>
-        <div className="tools-grid">
-          {editorPicks.map(tool => (
-            <ToolCard key={tool.id} tool={tool} />
-          ))}
-        </div>
-      </section>
 
-      {/* Trending Today Section */}
-      <section className="section-padding container animate-reveal" style={{ background: 'var(--bg-secondary)', borderRadius: 'var(--radius-xl)' }}>
-        <div className="section-header">
-          <h2 className="section-title" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}>
-            <Flame className="text-orange-400" size={32} /> Trending Today
-          </h2>
-          <p className="section-subtitle">The most popular and highly-viewed AI tools right now.</p>
-        </div>
-        <div className="tools-grid">
-          {trendingTools.map(tool => (
-            <ToolCard key={tool.id} tool={tool} />
-          ))}
-        </div>
-      </section>
-
-      {/* New This Week Section */}
-      <section className="section-padding container animate-reveal">
-        <div className="section-header">
-          <h2 className="section-title" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}>
-            <Zap className="text-green-400" size={32} /> New This Week
-          </h2>
-          <p className="section-subtitle">Freshly added, cutting-edge AI models discovered this week.</p>
-        </div>
-        <div className="tools-grid">
-          {newTools.map(tool => (
-            <ToolCard key={tool.id} tool={tool} />
-          ))}
-        </div>
-      </section>
+        {loading ? (
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px' }}>
+            <Loader2 className="animate-spin" style={{ color: '#5D0D18' }} size={48} />
+          </div>
+        ) : (
+          <div className="tools-grid">
+            {trendingTools.map(tool => (
+              <ToolCard key={tool.id} tool={tool} />
+            ))}
+          </div>
+        )}
+      </motion.section>
 
       {/* Categories Section */}
-      <section className="section-padding container animate-reveal">
+      <motion.section 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
+        className="section-padding container"
+      >
         <div className="section-header">
           <h2 className="section-title">Explore Categories</h2>
-          <p className="section-subtitle">Browse tools by what they can do for you.</p>
+          <p className="section-subtitle">Browse over 3,000 tools by what they can do for you.</p>
         </div>
         <div className="categories-grid">
           {categoriesData.map(category => (
             <CategoryCard key={category.id} category={category} />
           ))}
         </div>
-      </section>
+      </motion.section>
       
-      {/* Newsletter Section */}
-      <section className="section-padding container animate-reveal">
-        <div className="glass-panel" style={{ padding: '4rem 2rem', textAlign: 'center', background: 'linear-gradient(to right, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1))' }}>
-          <h2 className="section-title">Stay Updated with Latest AI Tools</h2>
-          <p className="section-subtitle" style={{ marginBottom: '2rem' }}>Get a weekly digest of the newest and most powerful AI tools delivered to your inbox.</p>
-          <form style={{ display: 'flex', gap: '1rem', maxWidth: '500px', margin: '0 auto' }} onSubmit={(e) => e.preventDefault()}>
-            <input 
-              type="email" 
-              placeholder="Enter your email address" 
-              style={{ flexGrow: 1, padding: '1rem', borderRadius: '0.5rem', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}
-              required
-            />
-            <button type="submit" className="btn btn-primary">Subscribe</button>
-          </form>
+      {/* Premium Newsletter Section */}
+      <motion.section 
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
+        className="section-padding container"
+      >
+        <div className="glass-panel" style={{ 
+          padding: 'clamp(3rem, 8vw, 5rem) clamp(1.5rem, 5vw, 3rem)', 
+          textAlign: 'center', 
+          background: 'linear-gradient(135deg, rgba(93, 13, 24, 0.03) 0%, rgba(159, 178, 172, 0.1) 100%)',
+          border: '1px solid var(--accent-secondary)',
+          position: 'relative',
+          overflow: 'hidden'
+        }}>
+          {/* Decorative blur inside newsletter */}
+          <div style={{ position: 'absolute', top: '-50%', left: '-10%', width: '100%', height: '200%', background: 'radial-gradient(circle, rgba(93,13,24,0.05) 0%, transparent 70%)', pointerEvents: 'none', zIndex: 0 }}></div>
+
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <h2 className="section-title" style={{ color: 'var(--text-primary)' }}>Stay Updated with Latest AI Tools</h2>
+            <p className="section-subtitle" style={{ marginBottom: '2.5rem' }}>Get a weekly digest of the newest and most powerful AI tools delivered to your inbox.</p>
+            <form style={{ display: 'flex', gap: '1rem', maxWidth: '550px', margin: '0 auto', position: 'relative', flexDirection: 'column' }} onSubmit={(e) => e.preventDefault()}>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <input 
+                  type="email" 
+                  placeholder="Enter your email address" 
+                  style={{ 
+                    flexGrow: 1, 
+                    padding: '1.2rem 1.5rem', 
+                    borderRadius: '3rem', 
+                    border: '1px solid var(--glass-border)', 
+                    background: 'var(--card-bg)', 
+                    color: 'var(--text-primary)', 
+                    fontFamily: 'inherit',
+                    outline: 'none', 
+                    fontSize: '1rem',
+                    transition: 'all 0.3s ease',
+                    minWidth: '0'
+                  }}
+                  required
+                />
+                <button type="submit" className="btn btn-primary" style={{ flexGrow: 1, padding: '1.2rem 2.5rem', fontSize: '1.1rem' }}>Subscribe</button>
+              </div>
+            </form>
+          </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

@@ -70,7 +70,7 @@ const ToolDetails = () => {
       {(tool.screenshots || tool.videoDemo) && (
         <div style={{ marginBottom: '4rem' }}>
           <h2 style={{ marginBottom: '1.5rem', fontSize: '1.8rem' }}>Screenshots & Demo</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem' }}>
+          <div className="responsive-grid-2" style={{ gap: '1rem' }}>
             {tool.videoDemo && (
               <iframe 
                 width="100%" 
@@ -92,7 +92,7 @@ const ToolDetails = () => {
 
       {/* Pros and Cons */}
       {(tool.pros || tool.cons) && (
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '4rem' }}>
+        <div className="responsive-grid-2" style={{ gap: '2rem', marginBottom: '4rem' }}>
           <div className="glass-panel" style={{ padding: '2rem' }}>
             <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', color: 'var(--success)' }}>
               <ThumbsUp size={24} /> Pros

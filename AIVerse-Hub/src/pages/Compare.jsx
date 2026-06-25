@@ -20,8 +20,8 @@ const Compare = () => {
       </div>
 
       {/* Selectors */}
-      <div className="glass-panel" style={{ padding: '2rem', display: 'grid', gridTemplateColumns: '1fr auto 1fr', gap: '2rem', alignItems: 'center', marginBottom: '4rem' }}>
-        <div>
+      <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center', justifyContent: 'center', marginBottom: '4rem' }}>
+        <div style={{ flex: '1 1 250px' }}>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)', fontWeight: '600' }}>Select First Tool</label>
           <select 
             value={tool1Id} 
@@ -43,7 +43,7 @@ const Compare = () => {
           <ArrowLeftRight size={24} className="text-purple-400" />
         </div>
 
-        <div>
+        <div style={{ flex: '1 1 250px' }}>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)', fontWeight: '600' }}>Select Second Tool</label>
           <select 
             value={tool2Id} 
@@ -64,9 +64,10 @@ const Compare = () => {
 
       {/* Comparison Grid */}
       {tool1 && tool2 ? (
-        <div style={{ display: 'grid', gridTemplateColumns: '250px 1fr 1fr', gap: '0', background: 'var(--glass-bg)', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
-          
-          {/* Headers */}
+        <div style={{ overflowX: 'auto', width: '100%', paddingBottom: '1rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '250px 1fr 1fr', minWidth: '700px', gap: '0', background: 'var(--glass-bg)', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
+            
+            {/* Headers */}
           <div style={{ padding: '2rem', borderBottom: '1px solid var(--glass-border)', borderRight: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', fontWeight: 'bold' }}>Overview</div>
           <div style={{ padding: '2rem', borderBottom: '1px solid var(--glass-border)', borderRight: '1px solid var(--glass-border)', textAlign: 'center' }}>
             <img src={tool1.logo} alt="" style={{ width: '60px', height: '60px', borderRadius: '12px', marginBottom: '1rem' }} />
@@ -124,6 +125,7 @@ const Compare = () => {
              </ul>
           </div>
 
+          </div>
         </div>
       ) : (
         <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)', border: '2px dashed var(--glass-border)', borderRadius: 'var(--radius-lg)' }}>
