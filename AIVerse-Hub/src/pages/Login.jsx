@@ -61,11 +61,11 @@ const Login = () => {
       await signInWithGoogle();
       navigate('/');
     } catch (err) {
-      console.error(err);
+      console.error("Google Auth Error:", err);
       if (err.code === 'auth/popup-closed-by-user') {
         setError('Login cancelled.');
       } else {
-        setError('Failed to log in with Google.');
+        setError(err.message || 'Failed to log in with Google.');
       }
     }
     setLoading(false);
