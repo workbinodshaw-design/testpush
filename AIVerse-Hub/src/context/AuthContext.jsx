@@ -5,8 +5,7 @@ import {
   signOut, 
   onAuthStateChanged,
   updateProfile,
-  signInWithRedirect,
-  getRedirectResult
+  signInWithPopup
 } from 'firebase/auth';
 import { doc, onSnapshot, setDoc, getDoc } from 'firebase/firestore';
 import { auth, db, googleProvider } from '../firebase';
@@ -48,38 +47,30 @@ export const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-  // Sign in with Google (Redirect instead of Popup)
+  // Sign in with Google
   const signInWithGoogle = async () => {
-    await signInWithRedirect(auth, googleProvider);
+    const result = await signInWithPopup(auth, googleProvider);
+    const user = result.user;
+    
+    // Check if user document exists in Firestore, if not, create it
+    const docRef = doc(db, 'users', user.uid);
+    const docSnap = await getDoc(docRef);
+    
+    if (!docSnap.exists()) {
+      await setDoc(docRef, {
+        email: user.email,
+        displayName: user.displayName || 'Google User',
+        bookmarks: [],
+        createdAt: new Date().toISOString()
+      });
+    }
+    
+    return result;
   };
 
   // Subscribe to auth state changes and user bookmarks
   useEffect(() => {
     let unsubscribeBookmarks = null;
-
-    // Check for redirect result when the page loads back from Google
-    const checkRedirectResult = async () => {
-      try {
-        const result = await getRedirectResult(auth);
-        if (result && result.user) {
-          const user = result.user;
-          const docRef = doc(db, 'users', user.uid);
-          const docSnap = await getDoc(docRef);
-          
-          if (!docSnap.exists()) {
-            await setDoc(docRef, {
-              email: user.email,
-              displayName: user.displayName || 'Google User',
-              bookmarks: [],
-              createdAt: new Date().toISOString()
-            });
-          }
-        }
-      } catch (err) {
-        console.error("Redirect login error:", err);
-      }
-    };
-    checkRedirectResult();
 
     const unsubscribeAuth = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);

@@ -55,8 +55,7 @@ const Login = () => {
   };
 
   const handleGoogleLogin = async () => {
-    setError('');
-    setLoading(true);
+    // DO NOT set state before calling popup, browsers will block it!
     try {
       await signInWithGoogle();
       navigate('/');
@@ -68,7 +67,6 @@ const Login = () => {
         setError(err.message || 'Failed to log in with Google.');
       }
     }
-    setLoading(false);
   };
 
   return (
