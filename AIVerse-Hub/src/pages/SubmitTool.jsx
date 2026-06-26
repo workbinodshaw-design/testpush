@@ -5,6 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
+import DOMPurify from 'dompurify';
 
 const SubmitTool = () => {
   const { currentUser } = useAuth();
@@ -37,8 +38,16 @@ const SubmitTool = () => {
     setError('');
 
     try {
+      const sanitizedData = {
+        name: DOMPurify.sanitize(formData.name),
+        url: DOMPurify.sanitize(formData.url),
+        category: DOMPurify.sanitize(formData.category),
+        description: DOMPurify.sanitize(formData.description),
+        pricing: DOMPurify.sanitize(formData.pricing)
+      };
+
       await addDoc(collection(db, 'submissions'), {
-        ...formData,
+        ...sanitizedData,
         userId: currentUser.uid,
         userEmail: currentUser.email,
         status: 'pending', // Admins will review this in the Firebase console

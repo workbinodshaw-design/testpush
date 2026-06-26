@@ -1,13 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Sparkles, User, Bot, Loader2, AlertCircle } from 'lucide-react';
-import Groq from 'groq-sdk';
+import DOMPurify from 'dompurify';
 import SuggestionButtons from './SuggestionButtons';
 import RecommendationCard from './RecommendationCard';
 import toolsData from '../data/tools.json';
-
-// Initialize Groq
-const apiKey = import.meta.env.VITE_GROQ_API_KEY;
-const groq = apiKey ? new Groq({ apiKey: apiKey, dangerouslyAllowBrowser: true }) : null;
 
 const AssistantChat = ({ onNewSearch }) => {
   const [messages, setMessages] = useState([
@@ -27,7 +23,8 @@ const AssistantChat = ({ onNewSearch }) => {
   }, [messages, isTyping]);
 
   const handleSend = async (queryText) => {
-    const text = queryText || inputValue;
+    let text = queryText || inputValue;
+    text = DOMPurify.sanitize(text);
     if (!text.trim()) return;
 
     // Add user message to UI
@@ -38,12 +35,6 @@ const AssistantChat = ({ onNewSearch }) => {
     
     // Save to local storage for recent searches
     if (onNewSearch) onNewSearch(text);
-
-    if (!groq) {
-      setMessages(prev => [...prev, { id: Date.now()+1, type: 'bot', text: 'Error: Groq API is not configured properly. Please check your .env file.' }]);
-      setIsTyping(false);
-      return;
-    }
 
     try {
       // 1. LOCAL SEARCH (RAG): Find relevant tools from the massive 5MB database
@@ -56,9 +47,9 @@ const AssistantChat = ({ onNewSearch }) => {
       // If no direct matches, just pass a few popular tools
       if (relevantTools.length === 0) relevantTools = toolsData.slice(0, 5); 
       
-      // Slice to max 10 to ensure we stay well below Groq's 6,000 Token Per Minute limit
+      // Slice to max 10 to ensure we stay well below token limits
       relevantTools = relevantTools.slice(0, 10);
-      const dynamicContext = relevantTools.map(t => `- ${t.name}: ${t.description.substring(0, 200)} (Category: ${t.category}, Pricing: ${t.pricing})`).join('\\n');
+      const dynamicContext = relevantTools.map(t => `- ${t.name}: ${t.description.substring(0, 200)} (Category: ${t.category}, Pricing: ${t.pricing})`).join('\n');
 
       const systemInstruction = `You are the highly professional AI Assistant for AIVerse Hub, a premium directory for AI tools. 
 Your ONLY goal is to chat with users and recommend AI tools from our database.
@@ -74,16 +65,27 @@ CRITICAL RULES YOU MUST FOLLOW:
       // Create new history array for the API call
       const updatedHistory = [...chatHistory, { role: 'user', content: text }];
       
-      const chatCompletion = await groq.chat.completions.create({
+      const payload = {
         messages: [
           { role: 'system', content: systemInstruction },
           ...updatedHistory
-        ],
-        model: "llama-3.1-8b-instant",
-        temperature: 0.2,
+        ]
+      };
+
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
       });
 
-      const responseText = chatCompletion.choices[0]?.message?.content || "I couldn't process that request.";
+      if (!response.ok) {
+        throw new Error(`Server Error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      const responseText = data.text;
       
       // Update history with the assistant's response for context in future messages
       setChatHistory([...updatedHistory, { role: 'assistant', content: responseText }]);
@@ -113,8 +115,8 @@ CRITICAL RULES YOU MUST FOLLOW:
 
       setMessages(prev => [...prev, botMsg]);
     } catch (error) {
-      console.error("Groq Error:", error);
-      setMessages(prev => [...prev, { id: Date.now()+1, type: 'bot', text: 'I apologize, but I am having trouble connecting to my servers right now. Please try again later.'}]);
+      console.error("API Fetch Error:", error);
+      setMessages(prev => [...prev, { id: Date.now()+1, type: 'bot', text: 'I apologize, but I am having trouble connecting to my secure servers right now. Please try again later.'}]);
     } finally {
       setIsTyping(false);
     }
@@ -141,12 +143,6 @@ CRITICAL RULES YOU MUST FOLLOW:
           </p>
         </div>
       </div>
-
-      {!groq && (
-        <div style={{ background: 'rgba(239, 68, 68, 0.1)', color: '#ef4444', padding: '0.8rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem' }}>
-          <AlertCircle size={16} /> API Key missing in .env
-        </div>
-      )}
 
       {/* Chat Messages */}
       <div style={{ flexGrow: 1, padding: '1.5rem', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -213,7 +209,7 @@ CRITICAL RULES YOU MUST FOLLOW:
           />
           <button 
             onClick={() => handleSend()}
-            disabled={!inputValue.trim() || isTyping || !groq}
+            disabled={!inputValue.trim() || isTyping}
             className="btn btn-primary"
             style={{ padding: '0 1.5rem', borderRadius: 'var(--radius-md)' }}
           >

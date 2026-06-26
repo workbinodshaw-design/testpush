@@ -4,6 +4,7 @@ import { Navigate } from 'react-router-dom';
 import { db } from '../firebase';
 import { collection, query, where, getDocs, updateDoc, doc, setDoc, deleteDoc, onSnapshot } from 'firebase/firestore';
 import { Check, X, ShieldAlert, Loader, Edit2, Trash2, Users, Save, Calendar, BarChart2 } from 'lucide-react';
+import DOMPurify from 'dompurify';
 
 const AdminPanel = () => {
   const { currentUser } = useAuth();
@@ -169,11 +170,11 @@ const AdminPanel = () => {
       const docRef = doc(db, collectionName, editingTool.id);
       
       const updateData = {
-        name: editForm.name,
-        category: editForm.category,
-        pricing: editForm.pricing,
-        url: editForm.url,
-        description: editForm.description
+        name: DOMPurify.sanitize(editForm.name || ''),
+        category: DOMPurify.sanitize(editForm.category || ''),
+        pricing: DOMPurify.sanitize(editForm.pricing || ''),
+        url: DOMPurify.sanitize(editForm.url || ''),
+        description: DOMPurify.sanitize(editForm.description || '')
       };
 
       await updateDoc(docRef, updateData);
