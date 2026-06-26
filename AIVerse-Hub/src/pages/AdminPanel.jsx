@@ -316,7 +316,7 @@ const AdminPanel = () => {
             <p style={{ textAlign: 'center', color: 'var(--text-secondary)', padding: '2rem 0' }}>No pending submissions.</p>
           )
 
-        ) : (
+        ) : activeTab === 'live' ? (
 
           /* LIVE TOOLS LIST */
           liveTools.length > 0 ? (
