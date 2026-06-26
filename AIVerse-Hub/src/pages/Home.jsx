@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Flame, Zap, Award, Loader2 } from 'lucide-react';
-import { collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
+import { collection, query, orderBy, limit, getDocs, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase';
 import Hero from '../components/Hero';
 import ToolCard from '../components/ToolCard';
@@ -11,6 +11,11 @@ import { motion } from 'framer-motion';
 const Home = () => {
   const [trendingTools, setTrendingTools] = useState([]);
   const [loading, setLoading] = useState(true);
+  
+  // Newsletter State
+  const [email, setEmail] = useState('');
+  const [subscribeStatus, setSubscribeStatus] = useState('idle'); // idle, loading, success, error
+  const [subscribeMessage, setSubscribeMessage] = useState('');
 
   // Dynamically fetch the Top 12 Tools from Firestore (Production RAG)
   useEffect(() => {
@@ -32,6 +37,37 @@ const Home = () => {
     
     fetchTools();
   }, []);
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+    if (!email || !email.includes('@')) return;
+
+    setSubscribeStatus('loading');
+    
+    try {
+      // 1. Save to Firestore
+      const emailLower = email.toLowerCase();
+      await setDoc(doc(db, 'subscribers', emailLower), {
+        email: emailLower,
+        subscribedAt: serverTimestamp()
+      });
+
+      // 2. Trigger Vercel API for Email
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: emailLower })
+      });
+
+      setSubscribeStatus('success');
+      setSubscribeMessage('Thanks for subscribing! Check your inbox.');
+      setEmail('');
+    } catch (error) {
+      console.error('Subscription error:', error);
+      setSubscribeStatus('error');
+      setSubscribeMessage('Something went wrong. Please try again.');
+    }
+  };
 
   return (
     <div className="home-page">
@@ -111,11 +147,14 @@ const Home = () => {
           <div style={{ position: 'relative', zIndex: 1 }}>
             <h2 className="section-title" style={{ color: 'var(--text-primary)' }}>Stay Updated with Latest AI Tools</h2>
             <p className="section-subtitle" style={{ marginBottom: '2.5rem' }}>Get a weekly digest of the newest and most powerful AI tools delivered to your inbox.</p>
-            <form style={{ display: 'flex', gap: '1rem', maxWidth: '550px', margin: '0 auto', position: 'relative', flexDirection: 'column' }} onSubmit={(e) => e.preventDefault()}>
+            <form style={{ display: 'flex', gap: '1rem', maxWidth: '550px', margin: '0 auto', position: 'relative', flexDirection: 'column' }} onSubmit={handleSubscribe}>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <input 
                   type="email" 
                   placeholder="Enter your email address" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  disabled={subscribeStatus === 'loading'}
                   style={{ 
                     flexGrow: 1, 
                     padding: '1.2rem 1.5rem', 
@@ -127,12 +166,31 @@ const Home = () => {
                     outline: 'none', 
                     fontSize: '1rem',
                     transition: 'all 0.3s ease',
-                    minWidth: '0'
+                    minWidth: '0',
+                    opacity: subscribeStatus === 'loading' ? 0.7 : 1
                   }}
                   required
                 />
-                <button type="submit" className="btn btn-primary" style={{ flexGrow: 1, padding: '1.2rem 2.5rem', fontSize: '1.1rem' }}>Subscribe</button>
+                <button 
+                  type="submit" 
+                  className="btn btn-primary" 
+                  disabled={subscribeStatus === 'loading'}
+                  style={{ flexGrow: 1, padding: '1.2rem 2.5rem', fontSize: '1.1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem' }}
+                >
+                  {subscribeStatus === 'loading' ? <><Loader2 size={18} className="animate-spin" /> Subscribing...</> : 'Subscribe'}
+                </button>
               </div>
+              {subscribeMessage && (
+                <div style={{ 
+                  marginTop: '0.5rem', 
+                  fontSize: '0.95rem', 
+                  color: subscribeStatus === 'error' ? '#ef4444' : '#10b981',
+                  textAlign: 'left',
+                  paddingLeft: '1rem'
+                }}>
+                  {subscribeMessage}
+                </div>
+              )}
             </form>
           </div>
         </div>

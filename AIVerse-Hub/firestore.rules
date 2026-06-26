@@ -54,6 +54,15 @@ service cloud.firestore {
       allow update, delete: if isAdmin();
     }
     
+    // --- NEWSLETTER SUBSCRIBERS ---
+    match /subscribers/{email} {
+      // Admins can read the subscriber list
+      allow read, delete: if isAdmin();
+      // Anyone can subscribe (add their email)
+      allow create: if true;
+      allow update: if false; // No updating emails once subscribed
+    }
+    
     // --- USERS (PROFILES & BOOKMARKS) ---
     match /users/{userId} {
       // Only the specific user can read/write their own profile/bookmarks

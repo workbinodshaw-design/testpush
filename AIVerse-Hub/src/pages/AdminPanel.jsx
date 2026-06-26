@@ -12,6 +12,7 @@ const AdminPanel = () => {
   
   const [submissions, setSubmissions] = useState([]);
   const [liveTools, setLiveTools] = useState([]);
+  const [subscribers, setSubscribers] = useState([]);
   const [loading, setLoading] = useState(true);
   
   // Analytics
@@ -95,6 +96,9 @@ const AdminPanel = () => {
           const q = query(collection(db, 'tools'), where('isCommunitySubmitted', '==', true));
           const snapshot = await getDocs(q);
           setLiveTools(snapshot.docs.map(d => ({ id: d.id, ...d.data(), source: 'tools' })));
+        } else if (activeTab === 'subscribers') {
+          const snapshot = await getDocs(collection(db, 'subscribers'));
+          setSubscribers(snapshot.docs.map(d => ({ id: d.id, ...d.data() })));
         }
       } catch (err) {
         console.error("Error fetching data:", err);
@@ -262,6 +266,12 @@ const AdminPanel = () => {
         >
           Live Community Tools ({activeTab === 'live' && !loading ? liveTools.length : '...'})
         </button>
+        <button 
+          onClick={() => setActiveTab('subscribers')}
+          className={`btn ${activeTab === 'subscribers' ? 'btn-primary' : 'btn-secondary'}`}
+        >
+          Newsletter Subscribers ({activeTab === 'subscribers' && !loading ? subscribers.length : '...'})
+        </button>
       </div>
 
       {/* MAIN CONTENT AREA */}
@@ -338,7 +348,40 @@ const AdminPanel = () => {
           ) : (
             <p style={{ textAlign: 'center', color: 'var(--text-secondary)', padding: '2rem 0' }}>No community tools live right now.</p>
           )
+        ) : activeTab === 'subscribers' ? (
+            
+            /* NEWSLETTER SUBSCRIBERS LIST */
+            subscribers.length > 0 ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <div style={{ background: 'var(--bg-tertiary)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--glass-border)' }}>
+                  <h3 style={{ margin: '0 0 1rem 0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <Users size={20} /> Newsletter Audience
+                  </h3>
+                  <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+                    <thead>
+                      <tr style={{ borderBottom: '1px solid var(--glass-border)' }}>
+                        <th style={{ padding: '0.75rem 0', color: 'var(--text-secondary)' }}>Email Address</th>
+                        <th style={{ padding: '0.75rem 0', color: 'var(--text-secondary)' }}>Subscribed On</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {subscribers.map(sub => (
+                        <tr key={sub.id} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                          <td style={{ padding: '1rem 0', fontWeight: '500' }}>{sub.email}</td>
+                          <td style={{ padding: '1rem 0', color: 'var(--text-secondary)' }}>
+                            {sub.subscribedAt ? new Date(sub.subscribedAt.seconds * 1000).toLocaleDateString() : 'Unknown'}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            ) : (
+              <p style={{ textAlign: 'center', color: 'var(--text-secondary)', padding: '2rem 0' }}>No subscribers yet.</p>
+            )
 
+          ) : null
         )}
       </div>
 
