@@ -381,8 +381,7 @@ const AdminPanel = () => {
               <p style={{ textAlign: 'center', color: 'var(--text-secondary)', padding: '2rem 0' }}>No subscribers yet.</p>
             )
 
-          ) : null
-        )}
+          ) : null}
       </div>
 
       {/* EDIT MODAL */}
