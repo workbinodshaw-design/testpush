@@ -42,7 +42,7 @@ export default async function handler(req, res) {
     // 4. Make the secure request
     const chatCompletion = await groq.chat.completions.create({
       messages: messages,
-      model: "llama3-8b-8192",
+      model: "llama-3.1-8b-instant",
       temperature: 0.5,
       max_tokens: 500,
     });
