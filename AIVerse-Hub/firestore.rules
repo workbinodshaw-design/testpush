@@ -62,6 +62,15 @@ service cloud.firestore {
       allow create: if true;
       allow update: if false; // No updating emails once subscribed
     }
+
+    // --- FEEDBACK ---
+    match /feedback/{feedbackId} {
+      // Admins can read and delete feedback
+      allow read, delete: if isAdmin();
+      // Anyone can submit feedback
+      allow create: if true;
+      allow update: if false; // No editing feedback
+    }
     
     // --- USERS (PROFILES & BOOKMARKS) ---
     match /users/{userId} {

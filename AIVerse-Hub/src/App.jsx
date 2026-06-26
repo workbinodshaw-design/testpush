@@ -19,6 +19,7 @@ import AIAssistant from './pages/AIAssistant';
 import Login from './pages/Login';
 import AdminPanel from './pages/AdminPanel';
 import CommandPalette from './components/CommandPalette';
+import FeedbackWidget from './components/FeedbackWidget';
 import './styles/globals.css';
 import './styles/cards.css';
 
@@ -60,6 +61,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <FeedbackWidget />
         </div>
       </Router>
     </AuthProvider>

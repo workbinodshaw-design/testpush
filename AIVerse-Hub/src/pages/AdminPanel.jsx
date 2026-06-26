@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { Navigate } from 'react-router-dom';
 import { db } from '../firebase';
 import { collection, query, where, getDocs, updateDoc, doc, setDoc, deleteDoc, onSnapshot } from 'firebase/firestore';
-import { Check, X, ShieldAlert, Loader, Edit2, Trash2, Users, Save, Calendar, BarChart2 } from 'lucide-react';
+import { Check, X, ShieldAlert, Loader, Edit2, Trash2, Users, Save, Calendar, BarChart2, MessageSquare } from 'lucide-react';
 import DOMPurify from 'dompurify';
 
 const AdminPanel = () => {
@@ -13,6 +13,7 @@ const AdminPanel = () => {
   const [submissions, setSubmissions] = useState([]);
   const [liveTools, setLiveTools] = useState([]);
   const [subscribers, setSubscribers] = useState([]);
+  const [feedbackItems, setFeedbackItems] = useState([]);
   const [loading, setLoading] = useState(true);
   
   // Analytics
@@ -99,6 +100,9 @@ const AdminPanel = () => {
         } else if (activeTab === 'subscribers') {
           const snapshot = await getDocs(collection(db, 'subscribers'));
           setSubscribers(snapshot.docs.map(d => ({ id: d.id, ...d.data() })));
+        } else if (activeTab === 'feedback') {
+          const snapshot = await getDocs(collection(db, 'feedback'));
+          setFeedbackItems(snapshot.docs.map(d => ({ id: d.id, ...d.data() })));
         }
       } catch (err) {
         console.error("Error fetching data:", err);
@@ -154,6 +158,18 @@ const AdminPanel = () => {
       }
     } catch (err) {
       console.error("Failed to delete tool:", err);
+    }
+  };
+
+  // DELETE FEEDBACK
+  const handleDeleteFeedback = async (feedbackId) => {
+    try {
+      if(window.confirm("Are you sure you want to delete this feedback?")) {
+        await deleteDoc(doc(db, 'feedback', feedbackId));
+        setFeedbackItems(prev => prev.filter(f => f.id !== feedbackId));
+      }
+    } catch (err) {
+      console.error("Failed to delete feedback:", err);
     }
   };
 
@@ -272,6 +288,12 @@ const AdminPanel = () => {
         >
           Newsletter Subscribers ({activeTab === 'subscribers' && !loading ? subscribers.length : '...'})
         </button>
+        <button 
+          onClick={() => setActiveTab('feedback')}
+          className={`btn ${activeTab === 'feedback' ? 'btn-primary' : 'btn-secondary'}`}
+        >
+          User Feedback ({activeTab === 'feedback' && !loading ? feedbackItems.length : '...'})
+        </button>
       </div>
 
       {/* MAIN CONTENT AREA */}
@@ -379,6 +401,42 @@ const AdminPanel = () => {
               </div>
             ) : (
               <p style={{ textAlign: 'center', color: 'var(--text-secondary)', padding: '2rem 0' }}>No subscribers yet.</p>
+            )
+
+        ) : activeTab === 'feedback' ? (
+            
+            /* USER FEEDBACK LIST */
+            feedbackItems.length > 0 ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                {feedbackItems.map(fb => (
+                  <div key={fb.id} style={{ background: 'var(--bg-tertiary)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--glass-border)', display: 'flex', flexWrap: 'wrap', gap: '1.5rem', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                    <div style={{ flex: '1 1 300px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+                        <h3 style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                          <MessageSquare size={18} className="text-purple-400" /> {fb.type}
+                        </h3>
+                        <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                          {fb.createdAt ? new Date(fb.createdAt.seconds * 1000).toLocaleString() : 'Just now'}
+                        </span>
+                      </div>
+                      <p style={{ margin: '0 0 1rem 0', color: 'var(--text-primary)', fontSize: '1rem', lineHeight: '1.5', whiteSpace: 'pre-wrap', background: 'var(--bg-secondary)', padding: '1rem', borderRadius: '8px' }}>
+                        "{fb.message}"
+                      </p>
+                      <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                        <strong>From:</strong> {fb.email}
+                      </div>
+                    </div>
+                    
+                    <div style={{ display: 'flex', gap: '0.5rem' }}>
+                      <button onClick={() => handleDeleteFeedback(fb.id)} className="btn" style={{ background: 'rgba(239,68,68,0.2)', color: '#ef4444', border: '1px solid rgba(239,68,68,0.3)', padding: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <Trash2 size={16} /> Delete
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p style={{ textAlign: 'center', color: 'var(--text-secondary)', padding: '2rem 0' }}>No feedback submitted yet.</p>
             )
 
           ) : null}
