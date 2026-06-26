@@ -4,10 +4,11 @@ import {
   signInWithEmailAndPassword, 
   signOut, 
   onAuthStateChanged,
-  updateProfile
+  updateProfile,
+  signInWithPopup
 } from 'firebase/auth';
-import { doc, onSnapshot, setDoc } from 'firebase/firestore';
-import { auth, db } from '../firebase';
+import { doc, onSnapshot, setDoc, getDoc } from 'firebase/firestore';
+import { auth, db, googleProvider } from '../firebase';
 
 const AuthContext = createContext();
 
@@ -46,6 +47,27 @@ export const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
+  // Sign in with Google
+  const signInWithGoogle = async () => {
+    const result = await signInWithPopup(auth, googleProvider);
+    const user = result.user;
+    
+    // Check if user document exists in Firestore, if not, create it
+    const docRef = doc(db, 'users', user.uid);
+    const docSnap = await getDoc(docRef);
+    
+    if (!docSnap.exists()) {
+      await setDoc(docRef, {
+        email: user.email,
+        displayName: user.displayName || 'Google User',
+        bookmarks: [],
+        createdAt: new Date().toISOString()
+      });
+    }
+    
+    return result;
+  };
+
   // Subscribe to auth state changes and user bookmarks
   useEffect(() => {
     let unsubscribeBookmarks = null;
@@ -82,7 +104,8 @@ export const AuthProvider = ({ children }) => {
     userBookmarks,
     signup,
     login,
-    logout
+    logout,
+    signInWithGoogle
   };
 
   return (
