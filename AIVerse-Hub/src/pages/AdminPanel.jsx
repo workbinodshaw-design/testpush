@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { Navigate } from 'react-router-dom';
-import { db } from '../firebase';
+import { db, auth } from '../firebase';
 import { collection, query, where, getDocs, updateDoc, doc, setDoc, deleteDoc, onSnapshot } from 'firebase/firestore';
-import { Check, X, ShieldAlert, Loader, Edit2, Trash2, Users, Save, Calendar, BarChart2, MessageSquare } from 'lucide-react';
+import { sendPasswordResetEmail } from 'firebase/auth';
+import { Check, X, ShieldAlert, Loader, Edit2, Trash2, Users, Save, Calendar, BarChart2, MessageSquare, Key } from 'lucide-react';
 import DOMPurify from 'dompurify';
 
 const AdminPanel = () => {
@@ -14,6 +15,7 @@ const AdminPanel = () => {
   const [liveTools, setLiveTools] = useState([]);
   const [subscribers, setSubscribers] = useState([]);
   const [feedbackItems, setFeedbackItems] = useState([]);
+  const [usersList, setUsersList] = useState([]);
   const [loading, setLoading] = useState(true);
   
   // Analytics
@@ -103,6 +105,9 @@ const AdminPanel = () => {
         } else if (activeTab === 'feedback') {
           const snapshot = await getDocs(collection(db, 'feedback'));
           setFeedbackItems(snapshot.docs.map(d => ({ id: d.id, ...d.data() })));
+        } else if (activeTab === 'users') {
+          const snapshot = await getDocs(collection(db, 'users'));
+          setUsersList(snapshot.docs.map(d => ({ id: d.id, ...d.data() })));
         }
       } catch (err) {
         console.error("Error fetching data:", err);
@@ -170,6 +175,19 @@ const AdminPanel = () => {
       }
     } catch (err) {
       console.error("Failed to delete feedback:", err);
+    }
+  };
+
+  // SEND PASSWORD RESET
+  const handlePasswordReset = async (email) => {
+    try {
+      if(window.confirm(`Send a password reset email to ${email}?`)) {
+        await sendPasswordResetEmail(auth, email);
+        alert(`Password reset email sent successfully to ${email}`);
+      }
+    } catch (err) {
+      console.error("Failed to send password reset:", err);
+      alert("Failed to send password reset email. Ensure the user signed up with email/password.");
     }
   };
 
@@ -293,6 +311,12 @@ const AdminPanel = () => {
           className={`btn ${activeTab === 'feedback' ? 'btn-primary' : 'btn-secondary'}`}
         >
           User Feedback ({activeTab === 'feedback' && !loading ? feedbackItems.length : '...'})
+        </button>
+        <button 
+          onClick={() => setActiveTab('users')}
+          className={`btn ${activeTab === 'users' ? 'btn-primary' : 'btn-secondary'}`}
+        >
+          Registered Users ({activeTab === 'users' && !loading ? usersList.length : '...'})
         </button>
       </div>
 
@@ -437,6 +461,58 @@ const AdminPanel = () => {
               </div>
             ) : (
               <p style={{ textAlign: 'center', color: 'var(--text-secondary)', padding: '2rem 0' }}>No feedback submitted yet.</p>
+            )
+
+        ) : activeTab === 'users' ? (
+            
+            /* REGISTERED USERS LIST */
+            usersList.length > 0 ? (
+              <div style={{ background: 'var(--bg-tertiary)', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--glass-border)' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+                  <thead>
+                    <tr style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid var(--glass-border)' }}>
+                      <th style={{ padding: '1rem', fontWeight: '500', color: 'var(--text-secondary)' }}>Display Name</th>
+                      <th style={{ padding: '1rem', fontWeight: '500', color: 'var(--text-secondary)' }}>Email</th>
+                      <th style={{ padding: '1rem', fontWeight: '500', color: 'var(--text-secondary)' }}>Saved Bookmarks</th>
+                      <th style={{ padding: '1rem', fontWeight: '500', color: 'var(--text-secondary)' }}>Join Date</th>
+                      <th style={{ padding: '1rem', fontWeight: '500', color: 'var(--text-secondary)', textAlign: 'right' }}>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {usersList.map((user, idx) => (
+                      <tr key={user.id} style={{ borderBottom: idx === usersList.length - 1 ? 'none' : '1px solid var(--glass-border)' }}>
+                        <td style={{ padding: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                          <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'var(--accent-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
+                            {user.displayName ? user.displayName.charAt(0).toUpperCase() : '?'}
+                          </div>
+                          {user.displayName || 'No Name Provided'}
+                        </td>
+                        <td style={{ padding: '1rem', color: 'var(--text-secondary)' }}>{user.email}</td>
+                        <td style={{ padding: '1rem' }}>
+                          <span style={{ background: 'rgba(99, 102, 241, 0.1)', color: '#818cf8', padding: '0.2rem 0.6rem', borderRadius: '20px', fontSize: '0.85rem' }}>
+                            {user.bookmarks ? user.bookmarks.length : 0} tools saved
+                          </span>
+                        </td>
+                        <td style={{ padding: '1rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+                          {user.createdAt ? new Date(user.createdAt).toLocaleDateString() : 'Unknown'}
+                        </td>
+                        <td style={{ padding: '1rem', textAlign: 'right' }}>
+                          <button 
+                            onClick={() => handlePasswordReset(user.email)}
+                            className="btn" 
+                            style={{ background: 'rgba(234, 179, 8, 0.1)', color: '#eab308', border: '1px solid rgba(234, 179, 8, 0.2)', padding: '0.4rem 0.8rem', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
+                            title="Send Password Reset Email"
+                          >
+                            <Key size={14} /> Reset Password
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ) : (
+              <p style={{ textAlign: 'center', color: 'var(--text-secondary)', padding: '2rem 0' }}>No registered users yet.</p>
             )
 
           ) : null}
