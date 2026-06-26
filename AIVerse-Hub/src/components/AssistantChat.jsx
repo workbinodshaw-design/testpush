@@ -3,11 +3,13 @@ import { Send, Sparkles, User, Bot, Loader2, AlertCircle } from 'lucide-react';
 import DOMPurify from 'dompurify';
 import SuggestionButtons from './SuggestionButtons';
 import RecommendationCard from './RecommendationCard';
+import PromptRecommendationCard from './PromptRecommendationCard';
 import toolsData from '../data/tools.json';
+import promptsData from '../data/prompts.json';
 
 const AssistantChat = ({ onNewSearch }) => {
   const [messages, setMessages] = useState([
-    { id: 1, type: 'bot', text: 'Hello! I am the AIVerse Hub Assistant, powered by Groq & LLaMA 3. How can I help you find the perfect AI tool today?' }
+    { id: 1, type: 'bot', text: 'Hello! I am the AIVerse Hub Assistant, powered by Groq & LLaMA 3. How can I help you find the perfect AI tool or AI Prompt today?' }
   ]);
   const [chatHistory, setChatHistory] = useState([]);
   const [inputValue, setInputValue] = useState('');
@@ -37,30 +39,51 @@ const AssistantChat = ({ onNewSearch }) => {
     if (onNewSearch) onNewSearch(text);
 
     try {
-      // 1. LOCAL SEARCH (RAG): Find relevant tools from the massive 5MB database
+      // 1. LOCAL SEARCH (RAG): Find relevant tools AND prompts
       const keywords = text.toLowerCase().split(' ').filter(k => k.length > 2);
+      
+      // Search Tools
       let relevantTools = toolsData.filter(t => {
         const toolText = `${t.name} ${t.category} ${t.description}`.toLowerCase();
         return keywords.some(k => toolText.includes(k));
       });
+      if (relevantTools.length === 0) relevantTools = toolsData.slice(0, 3); 
+      relevantTools = relevantTools.slice(0, 5);
       
-      // If no direct matches, just pass a few popular tools
-      if (relevantTools.length === 0) relevantTools = toolsData.slice(0, 5); 
-      
-      // Slice to max 10 to ensure we stay well below token limits
-      relevantTools = relevantTools.slice(0, 10);
-      const dynamicContext = relevantTools.map(t => `- ${t.name}: ${t.description.substring(0, 200)} (Category: ${t.category}, Pricing: ${t.pricing})`).join('\n');
+      // Search Prompts
+      const isAskingForPrompt = text.toLowerCase().includes('prompt');
+      let relevantPrompts = [];
+      if (isAskingForPrompt || keywords.length > 0) {
+        relevantPrompts = promptsData.filter(p => {
+          const promptText = `${p.title} ${p.category} ${p.prompt}`.toLowerCase();
+          return keywords.some(k => promptText.includes(k));
+        });
+        if (relevantPrompts.length === 0 && isAskingForPrompt) {
+          relevantPrompts = promptsData.slice(0, 3); // fallback
+        }
+        relevantPrompts = relevantPrompts.slice(0, 5); // max 5 prompts
+      }
 
-      const systemInstruction = `You are the highly professional AI Assistant for AIVerse Hub, a premium directory for AI tools. 
-Your ONLY goal is to chat with users and recommend AI tools from our database.
-I have searched our database and found these relevant tools for the user's request:
-${dynamicContext}
+      const toolsContext = relevantTools.length > 0 
+        ? `\nAVAILABLE TOOLS:\n` + relevantTools.map(t => `- ${t.name}: ${t.description.substring(0, 200)} (Category: ${t.category})`).join('\n')
+        : '';
+        
+      const promptsContext = relevantPrompts.length > 0 
+        ? `\nAVAILABLE PROMPTS:\n` + relevantPrompts.map(p => `- ID: ${p.id} | Title: ${p.title} | Content: ${p.prompt.substring(0, 200)}...`).join('\n')
+        : '';
+
+      const systemInstruction = `You are the highly professional AI Assistant for AIVerse Hub, a premium directory for AI tools and AI Prompts. 
+Your ONLY goal is to chat with users and recommend AI tools or AI prompts from our database.
+I have searched our database and found these relevant items for the user's request:
+${toolsContext}
+${promptsContext}
 
 CRITICAL RULES YOU MUST FOLLOW:
 1. SHORT RESPONSES: Keep your answers extremely short and concise (1-3 sentences maximum). Never write long paragraphs.
-2. ONLY USE DATABASE: Only recommend tools that are explicitly listed in the context above. If no relevant tools are in the context, apologize and say you couldn't find an exact match in our database. Do not hallucinate or recommend outside tools.
+2. ONLY USE DATABASE: Only recommend tools or prompts explicitly listed in the context above. If none match, apologize and say you couldn't find an exact match in our database.
 3. NO MARKDOWN: Do NOT use any Markdown formatting (no asterisks, no bolding, no bullet points). Write in clear, plain text.
-4. TAG FORMATTING: When recommending a tool, you MUST include the exact tool name wrapped in brackets like this: [RECOMMEND: Tool Name].`;
+4. TOOL TAG FORMATTING: When recommending a tool, you MUST include the exact tool name wrapped in brackets like this: [RECOMMEND: Tool Name].
+5. PROMPT TAG FORMATTING: When recommending a prompt, you MUST include the exact prompt ID wrapped in brackets like this: [PROMPT: ID]. For example: [PROMPT: p12]`;
 
       // Create new history array for the API call
       const updatedHistory = [...chatHistory, { role: 'user', content: text }];
@@ -90,27 +113,38 @@ CRITICAL RULES YOU MUST FOLLOW:
       // Update history with the assistant's response for context in future messages
       setChatHistory([...updatedHistory, { role: 'assistant', content: responseText }]);
       
-      // Parse recommendations
+      // Parse Tool recommendations
       const recRegex = /\[RECOMMEND:\s*(.*?)\]/g;
       const recommendedNames = [];
       let match;
       while ((match = recRegex.exec(responseText)) !== null) {
         recommendedNames.push(match[1].trim().toLowerCase());
       }
-      
-      // Find actual tool objects
       const recommendations = toolsData.filter(t => 
         recommendedNames.includes(t.name.toLowerCase())
       );
       
+      // Parse Prompt recommendations
+      const promptRegex = /\[PROMPT:\s*(.*?)\]/g;
+      const recommendedPromptIds = [];
+      let matchPrompt;
+      while ((matchPrompt = promptRegex.exec(responseText)) !== null) {
+        recommendedPromptIds.push(matchPrompt[1].trim().toLowerCase());
+      }
+      const recommendedPrompts = promptsData.filter(p => 
+        recommendedPromptIds.includes(p.id.toLowerCase())
+      );
+      
       // Clean up the text to remove the ugly brackets for the user
-      const cleanText = responseText.replace(/\[RECOMMEND:\s*(.*?)\]/g, '$1');
+      let cleanText = responseText.replace(/\[RECOMMEND:\s*(.*?)\]/g, '$1');
+      cleanText = cleanText.replace(/\[PROMPT:\s*(.*?)\]/g, ''); // Hide the prompt ID completely
 
       const botMsg = { 
         id: Date.now() + 1, 
         type: 'bot', 
-        text: cleanText,
-        recommendations: recommendations
+        text: cleanText.trim(),
+        recommendations: recommendations,
+        prompts: recommendedPrompts
       };
 
       setMessages(prev => [...prev, botMsg]);
@@ -177,6 +211,14 @@ CRITICAL RULES YOU MUST FOLLOW:
                   ))}
                 </div>
               )}
+              
+              {msg.prompts && msg.prompts.length > 0 && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.5rem' }}>
+                  {msg.prompts.map(prompt => (
+                    <PromptRecommendationCard key={prompt.id} prompt={prompt} />
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -204,7 +246,7 @@ CRITICAL RULES YOU MUST FOLLOW:
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Ask Groq anything..."
+            placeholder="Ask Groq for tools or prompts..."
             style={{ flexGrow: 1, padding: '1rem', borderRadius: 'var(--radius-md)', background: 'var(--bg-tertiary)', border: '1px solid var(--glass-border)', color: 'var(--text-primary)', outline: 'none' }}
           />
           <button 

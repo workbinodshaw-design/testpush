@@ -1,50 +1,3062 @@
 [
   {
-    "id": "p1",
-    "title": "SEO Optimized Blog Writer",
-    "category": "ChatGPT Prompts",
-    "prompt": "Act as an expert SEO blog writer. Write a comprehensive 1500-word blog post about [TOPIC]. Include a catchy title, introduction, 5 subheadings, and a conclusion. Naturally integrate the following keywords: [KEYWORDS]. Ensure the tone is engaging and professional."
+    "id": "p350",
+    "title": "Animation: Action 100",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a red panda drinking boba tea, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
   },
   {
-    "id": "p2",
-    "title": "React Component Generator",
-    "category": "Claude Prompts",
-    "prompt": "Write a complete, production-ready React functional component for a [COMPONENT NAME]. Use Tailwind CSS for styling. Include prop validation, loading states, error handling, and comments explaining complex logic. Make sure the component is fully accessible (a11y compliant)."
+    "id": "p387",
+    "title": "Enhance: Night 37",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and add extreme micro-details to the skin and eyes. Ensure denoised, crystal clear and sharp focus, pristine clarity."
   },
   {
-    "id": "p3",
-    "title": "Cinematic Cyberpunk City",
-    "category": "Midjourney Prompts",
-    "prompt": "A sprawling cyberpunk metropolis at night, neon lights reflecting in rain puddles, volumetric fog, flying cars leaving light trails, highly detailed, 8k resolution, cinematic lighting, dramatic angles, Unreal Engine 5 render style --ar 16:9 --v 6.0"
+    "id": "p372",
+    "title": "Enhance: Night 22",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and upscale to 8k resolution. Ensure sharp focus, pristine clarity and masterpiece, best quality."
   },
   {
-    "id": "p4",
-    "title": "Cold Email Outreach",
-    "category": "ChatGPT Prompts",
-    "prompt": "Write a highly converting B2B cold email sequence (3 emails) targeting [TARGET AUDIENCE]. The goal is to book a 15-minute discovery call for our SaaS product [PRODUCT NAME]. Keep it short, punchy, and focused on their pain points."
+    "id": "p493",
+    "title": "Productivity: Marketing 43",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is witty and humorous."
   },
   {
-    "id": "p5",
-    "title": "Code Refactoring Expert",
-    "category": "Claude Prompts",
-    "prompt": "Analyze the following code block. Identify performance bottlenecks, security vulnerabilities, and code smells. Then, rewrite the code to be clean, modular, and optimized. Explain the changes you made and why: [INSERT CODE]"
+    "id": "p483",
+    "title": "Productivity: Coding 33",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Chief Marketing Officer. Create a 30-day social media content calendar for a [NICHE] business. Make sure the tone is highly technical and precise."
   },
   {
-    "id": "p6",
-    "title": "Hyper-realistic Portrait",
-    "category": "Midjourney Prompts",
-    "prompt": "Hyper-realistic portrait of an elderly wizard, intricate facial details, deep wrinkles, glowing blue eyes, wearing ancient tattered robes, softly lit by candlelight, dark background, shot on 85mm lens, f/1.8, extremely detailed, 8k --ar 4:5 --style raw"
+    "id": "p339",
+    "title": "Animation: Action 89",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a magical cat riding a flying broomstick, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
   },
   {
-    "id": "p7",
-    "title": "Product Marketing Strategy",
-    "category": "ChatGPT Prompts",
-    "prompt": "Act as a Chief Marketing Officer. Create a comprehensive 30-day go-to-market strategy for launching [PRODUCT NAME] to [TARGET AUDIENCE]. Include channels to use, budget allocation percentages, and key performance indicators (KPIs) to track."
+    "id": "p206",
+    "title": "Cinematic Video: Space 56",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a majestic medieval castle on a snowy mountain, with volumetric fog rolling in. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p416",
+    "title": "Enhance: Portrait 66",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and upscale to 8k resolution. Ensure masterpiece, best quality and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p257",
+    "title": "Animation: Robot 7",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a magical cat riding a flying broomstick, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p271",
+    "title": "Animation: Action 21",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a tiny robot discovering a glowing flower, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p182",
+    "title": "Cinematic Video: Nature 32",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a majestic medieval castle on a snowy mountain, with hyper-realistic water reflections. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p135",
+    "title": "IG Portrait: Casual 135",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a stylish female influencer at a rooftop bar at sunset, golden hour lighting, shot on iPhone 15 Pro Max, vsco girl, trending on instagram."
+  },
+  {
+    "id": "p433",
+    "title": "Enhance: Portrait 83",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and enhance the lighting and contrast. Ensure denoised, crystal clear and hdr, intricate details."
+  },
+  {
+    "id": "p103",
+    "title": "IG Portrait: City Vibes 103",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a korean beauty in a modern minimalist apartment, golden hour lighting, shot on iPhone 15 Pro Max, hyperrealistic, vsco girl."
+  },
+  {
+    "id": "p419",
+    "title": "Enhance: Landscape 69",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and remove all noise and artifacts. Ensure perfectly symmetrical facial features and hdr, intricate details."
+  },
+  {
+    "id": "p33",
+    "title": "IG Portrait: City Vibes 33",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a fashion model at a sun-drenched beach in Bali, golden hour lighting, shot on 35mm lens, trending on instagram, vsco girl."
+  },
+  {
+    "id": "p190",
+    "title": "Cinematic Video: Nature 40",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a lone astronaut exploring a red desert planet, with hyper-realistic water reflections. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p308",
+    "title": "Animation: Robot 58",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a group of fluffy monsters baking a cake, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p369",
+    "title": "Enhance: Anime 19",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and remove all noise and artifacts. Ensure perfectly symmetrical facial features and hdr, intricate details."
+  },
+  {
+    "id": "p408",
+    "title": "Enhance: Vintage 58",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and upscale to 8k resolution. Ensure hdr, intricate details and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p104",
+    "title": "IG Portrait: Aesthetic 104",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a fashion model in a cozy coffee shop, soft natural window light, shot on iPhone 15 Pro Max, aesthetic, hyperrealistic."
+  },
+  {
+    "id": "p232",
+    "title": "Cinematic Video: Space 82",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a dense enchanted forest with glowing fairies, with epic dramatic stormy skies. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p69",
+    "title": "IG Portrait: Casual 69",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a fashion model at a rooftop bar at sunset, neon reflections, Fujifilm X100V, film simulation, highly detailed, aesthetic."
+  },
+  {
+    "id": "p365",
+    "title": "Enhance: Vintage 15",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and remove all noise and artifacts. Ensure masterpiece, best quality and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p194",
+    "title": "Cinematic Video: Action 44",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a futuristic neon cyberpunk city, with lens flares and cinematic lighting. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p490",
+    "title": "Productivity: Coding 40",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is witty and humorous."
+  },
+  {
+    "id": "p348",
+    "title": "Animation: Robot 98",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a tiny robot discovering a glowing flower, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p508",
+    "title": "Productivity: Health 58",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is concise and data-driven."
+  },
+  {
+    "id": "p161",
+    "title": "Cinematic Video: Fantasy 11",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a lone astronaut exploring a red desert planet, with hyper-realistic water reflections. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p334",
+    "title": "Animation: Action 84",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a young wizard practicing spells in a messy room, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p231",
+    "title": "Cinematic Video: Fantasy 81",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a dense enchanted forest with glowing fairies, with epic dramatic stormy skies. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p464",
+    "title": "Productivity: Coding 14",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Chief Marketing Officer. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is witty and humorous."
+  },
+  {
+    "id": "p266",
+    "title": "Animation: Action 16",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a red panda drinking boba tea, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p397",
+    "title": "Enhance: Vintage 47",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and remove all noise and artifacts. Ensure sharp focus, pristine clarity and denoised, crystal clear."
+  },
+  {
+    "id": "p62",
+    "title": "IG Portrait: Golden Hour 62",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a beautiful girl walking down a neon-lit street in Tokyo, flash photography style, Polaroid vintage style, trending on instagram, trending on instagram."
+  },
+  {
+    "id": "p389",
+    "title": "Enhance: Vintage 39",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and make it hyper-realistic and sharp. Ensure perfectly symmetrical facial features and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p98",
+    "title": "IG Portrait: Fashion 98",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a elegant woman walking down a neon-lit street in Tokyo, soft natural window light, Polaroid vintage style, highly detailed, vsco girl."
+  },
+  {
+    "id": "p126",
+    "title": "IG Portrait: Fashion 126",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a stylish female influencer at a rooftop bar at sunset, golden hour lighting, Fujifilm X100V, film simulation, hyperrealistic, vsco girl."
+  },
+  {
+    "id": "p203",
+    "title": "Cinematic Video: Fantasy 53",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a lone astronaut exploring a red desert planet, with hyper-realistic water reflections. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p384",
+    "title": "Enhance: Portrait 34",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and add extreme micro-details to the skin and eyes. Ensure hdr, intricate details and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p313",
+    "title": "Animation: Cute Animal 63",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a group of fluffy monsters baking a cake, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p338",
+    "title": "Animation: Robot 88",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a red panda drinking boba tea, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p169",
+    "title": "Cinematic Video: Cyberpunk 19",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a majestic medieval castle on a snowy mountain, with heavy rain pouring down. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p469",
+    "title": "Productivity: Coding 19",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p254",
+    "title": "Animation: Action 4",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a tiny robot discovering a glowing flower, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p264",
+    "title": "Animation: Cute Animal 14",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a young wizard practicing spells in a messy room, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p478",
+    "title": "Productivity: Data 28",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p175",
+    "title": "Cinematic Video: Cyberpunk 25",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a high-speed car chase on a rainy highway, with lens flares and cinematic lighting. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p423",
+    "title": "Enhance: Night 73",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and make it hyper-realistic and sharp. Ensure hdr, intricate details and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p80",
+    "title": "IG Portrait: Aesthetic 80",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a fashion model in a cozy coffee shop, soft natural window light, Fujifilm X100V, film simulation, flawless skin, hyperrealistic."
   },
   {
     "id": "p8",
-    "title": "Data Analysis Summarizer",
-    "category": "Claude Prompts",
-    "prompt": "Review the following dataset/CSV data. Extract the top 5 key insights, identify any unusual trends or anomalies, and suggest 3 actionable business recommendations based on this data: [INSERT DATA]"
+    "title": "IG Portrait: Fashion 8",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a fashion model in a cozy coffee shop, flash photography style, 85mm f/1.4 lens depth of field, trending on instagram, vsco girl."
+  },
+  {
+    "id": "p91",
+    "title": "IG Portrait: Fashion 91",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a young woman at a sun-drenched beach in Bali, soft natural window light, 85mm f/1.4 lens depth of field, highly detailed, flawless skin."
+  },
+  {
+    "id": "p275",
+    "title": "Animation: Action 25",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a tiny robot discovering a glowing flower, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p216",
+    "title": "Cinematic Video: Action 66",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a dense enchanted forest with glowing fairies, with heavy rain pouring down. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p242",
+    "title": "Cinematic Video: Nature 92",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a dense enchanted forest with glowing fairies, with lens flares and cinematic lighting. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p353",
+    "title": "Enhance: Portrait 3",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and enhance the lighting and contrast. Ensure denoised, crystal clear and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p214",
+    "title": "Cinematic Video: Nature 64",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a high-speed car chase on a rainy highway, with volumetric fog rolling in. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p295",
+    "title": "Animation: Action 45",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a tiny robot discovering a glowing flower, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p333",
+    "title": "Animation: Robot 83",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a tiny robot discovering a glowing flower, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p227",
+    "title": "Cinematic Video: Action 77",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a majestic medieval castle on a snowy mountain, with hyper-realistic water reflections. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p393",
+    "title": "Enhance: Night 43",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and make it hyper-realistic and sharp. Ensure perfectly symmetrical facial features and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p394",
+    "title": "Enhance: Portrait 44",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and enhance the lighting and contrast. Ensure perfectly symmetrical facial features and hdr, intricate details."
+  },
+  {
+    "id": "p268",
+    "title": "Animation: Magic 18",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a young wizard practicing spells in a messy room, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p280",
+    "title": "Animation: Cute Animal 30",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a young wizard practicing spells in a messy room, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p181",
+    "title": "Cinematic Video: Action 31",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a lone astronaut exploring a red desert planet, with epic dramatic stormy skies. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p413",
+    "title": "Enhance: Anime 63",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and add extreme micro-details to the skin and eyes. Ensure denoised, crystal clear and masterpiece, best quality."
+  },
+  {
+    "id": "p404",
+    "title": "Enhance: Anime 54",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and upscale to 8k resolution. Ensure hdr, intricate details and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p342",
+    "title": "Animation: Cozy 92",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a magical cat riding a flying broomstick, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p252",
+    "title": "Animation: Magic 2",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a magical cat riding a flying broomstick, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p440",
+    "title": "Enhance: Anime 90",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and upscale to 8k resolution. Ensure sharp focus, pristine clarity and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p316",
+    "title": "Animation: Action 66",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a young wizard practicing spells in a messy room, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p59",
+    "title": "IG Portrait: Golden Hour 59",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a korean beauty in a cozy coffee shop, cinematic warm lighting, 85mm f/1.4 lens depth of field, highly detailed, hyperrealistic."
+  },
+  {
+    "id": "p462",
+    "title": "Productivity: SEO 12",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p448",
+    "title": "Enhance: Landscape 98",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and enhance the lighting and contrast. Ensure masterpiece, best quality and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p488",
+    "title": "Productivity: SEO 38",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is witty and humorous."
+  },
+  {
+    "id": "p112",
+    "title": "IG Portrait: Golden Hour 112",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a fashion model at a sun-drenched beach in Bali, flash photography style, shot on 35mm lens, flawless skin, highly detailed."
+  },
+  {
+    "id": "p465",
+    "title": "Productivity: Marketing 15",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Senior Full Stack Developer. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p209",
+    "title": "Cinematic Video: Space 59",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a lone astronaut exploring a red desert planet, with heavy rain pouring down. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p239",
+    "title": "Cinematic Video: Space 89",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a futuristic neon cyberpunk city, with volumetric fog rolling in. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p56",
+    "title": "IG Portrait: City Vibes 56",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a young woman in a cozy coffee shop, cinematic warm lighting, Fujifilm X100V, film simulation, flawless skin, vsco girl."
+  },
+  {
+    "id": "p89",
+    "title": "IG Portrait: Casual 89",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a elegant woman at a rooftop bar at sunset, neon reflections, shot on 35mm lens, aesthetic, vsco girl."
+  },
+  {
+    "id": "p476",
+    "title": "Productivity: Health 26",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Chief Marketing Officer. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is witty and humorous."
+  },
+  {
+    "id": "p377",
+    "title": "Enhance: Portrait 27",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and remove all noise and artifacts. Ensure masterpiece, best quality and masterpiece, best quality."
+  },
+  {
+    "id": "p430",
+    "title": "Enhance: Anime 80",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and add extreme micro-details to the skin and eyes. Ensure masterpiece, best quality and denoised, crystal clear."
+  },
+  {
+    "id": "p97",
+    "title": "IG Portrait: Fashion 97",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a stylish female influencer at a rooftop bar at sunset, neon reflections, Fujifilm X100V, film simulation, hyperrealistic, trending on instagram."
+  },
+  {
+    "id": "p356",
+    "title": "Enhance: Landscape 6",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and make it hyper-realistic and sharp. Ensure sharp focus, pristine clarity and denoised, crystal clear."
+  },
+  {
+    "id": "p39",
+    "title": "IG Portrait: Aesthetic 39",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a beautiful girl walking down a neon-lit street in Tokyo, cinematic warm lighting, 85mm f/1.4 lens depth of field, highly detailed, hyperrealistic."
+  },
+  {
+    "id": "p128",
+    "title": "IG Portrait: City Vibes 128",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a stylish female influencer at a sun-drenched beach in Bali, golden hour lighting, Fujifilm X100V, film simulation, hyperrealistic, hyperrealistic."
+  },
+  {
+    "id": "p293",
+    "title": "Animation: Action 43",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a young wizard practicing spells in a messy room, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p253",
+    "title": "Animation: Action 3",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a magical cat riding a flying broomstick, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p50",
+    "title": "IG Portrait: City Vibes 50",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a fashion model in a modern minimalist apartment, flash photography style, Fujifilm X100V, film simulation, trending on instagram, highly detailed."
+  },
+  {
+    "id": "p173",
+    "title": "Cinematic Video: Fantasy 23",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a majestic medieval castle on a snowy mountain, with lens flares and cinematic lighting. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p163",
+    "title": "Cinematic Video: Nature 13",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a dense enchanted forest with glowing fairies, with lens flares and cinematic lighting. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p202",
+    "title": "Cinematic Video: Space 52",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a high-speed car chase on a rainy highway, with heavy rain pouring down. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p229",
+    "title": "Cinematic Video: Action 79",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a dense enchanted forest with glowing fairies, with lens flares and cinematic lighting. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p499",
+    "title": "Productivity: Health 49",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p435",
+    "title": "Enhance: Portrait 85",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and upscale to 8k resolution. Ensure masterpiece, best quality and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p368",
+    "title": "Enhance: Landscape 18",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and enhance the lighting and contrast. Ensure hdr, intricate details and denoised, crystal clear."
+  },
+  {
+    "id": "p300",
+    "title": "Animation: Cozy 50",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a red panda drinking boba tea, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p79",
+    "title": "IG Portrait: Aesthetic 79",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a young woman in a cozy coffee shop, cinematic warm lighting, Fujifilm X100V, film simulation, aesthetic, highly detailed."
+  },
+  {
+    "id": "p438",
+    "title": "Enhance: Portrait 88",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and upscale to 8k resolution. Ensure sharp focus, pristine clarity and denoised, crystal clear."
+  },
+  {
+    "id": "p238",
+    "title": "Cinematic Video: Nature 88",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a lone astronaut exploring a red desert planet, with lens flares and cinematic lighting. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p14",
+    "title": "IG Portrait: Fashion 14",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a elegant woman walking down a neon-lit street in Tokyo, flash photography style, shot on 35mm lens, trending on instagram, aesthetic."
+  },
+  {
+    "id": "p138",
+    "title": "IG Portrait: Fashion 138",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a stylish female influencer at a rooftop bar at sunset, soft natural window light, Fujifilm X100V, film simulation, vsco girl, flawless skin."
+  },
+  {
+    "id": "p441",
+    "title": "Enhance: Landscape 91",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and upscale to 8k resolution. Ensure perfectly symmetrical facial features and denoised, crystal clear."
+  },
+  {
+    "id": "p317",
+    "title": "Animation: Magic 67",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a young wizard practicing spells in a messy room, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p136",
+    "title": "IG Portrait: Aesthetic 136",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a stylish female influencer in a modern minimalist apartment, flash photography style, Polaroid vintage style, highly detailed, trending on instagram."
+  },
+  {
+    "id": "p412",
+    "title": "Enhance: Vintage 62",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and add extreme micro-details to the skin and eyes. Ensure perfectly symmetrical facial features and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p507",
+    "title": "Productivity: Coding 57",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Create a 30-day social media content calendar for a [NICHE] business. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p226",
+    "title": "Cinematic Video: Fantasy 76",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a majestic medieval castle on a snowy mountain, with lens flares and cinematic lighting. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p108",
+    "title": "IG Portrait: City Vibes 108",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a young woman in a cozy coffee shop, golden hour lighting, Polaroid vintage style, hyperrealistic, vsco girl."
+  },
+  {
+    "id": "p262",
+    "title": "Animation: Cozy 12",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a magical cat riding a flying broomstick, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p127",
+    "title": "IG Portrait: Casual 127",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a stylish female influencer walking down a neon-lit street in Tokyo, flash photography style, 85mm f/1.4 lens depth of field, aesthetic, trending on instagram."
+  },
+  {
+    "id": "p90",
+    "title": "IG Portrait: Aesthetic 90",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a fashion model in a cozy coffee shop, golden hour lighting, shot on 35mm lens, flawless skin, aesthetic."
+  },
+  {
+    "id": "p429",
+    "title": "Enhance: Landscape 79",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and upscale to 8k resolution. Ensure sharp focus, pristine clarity and hdr, intricate details."
+  },
+  {
+    "id": "p25",
+    "title": "IG Portrait: City Vibes 25",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a beautiful girl walking down a neon-lit street in Tokyo, flash photography style, shot on iPhone 15 Pro Max, trending on instagram, highly detailed."
+  },
+  {
+    "id": "p116",
+    "title": "IG Portrait: Golden Hour 116",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a fashion model walking down a neon-lit street in Tokyo, neon reflections, shot on iPhone 15 Pro Max, vsco girl, trending on instagram."
+  },
+  {
+    "id": "p379",
+    "title": "Enhance: Vintage 29",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and make it hyper-realistic and sharp. Ensure denoised, crystal clear and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p16",
+    "title": "IG Portrait: Fashion 16",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a stylish female influencer at a rooftop bar at sunset, flash photography style, shot on 35mm lens, aesthetic, hyperrealistic."
+  },
+  {
+    "id": "p426",
+    "title": "Enhance: Night 76",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and make it hyper-realistic and sharp. Ensure hdr, intricate details and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p498",
+    "title": "Productivity: Health 48",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is concise and data-driven."
+  },
+  {
+    "id": "p491",
+    "title": "Productivity: Health 41",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Senior Full Stack Developer. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is concise and data-driven."
+  },
+  {
+    "id": "p43",
+    "title": "IG Portrait: Fashion 43",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a young woman walking down a neon-lit street in Tokyo, neon reflections, shot on 35mm lens, trending on instagram, trending on instagram."
+  },
+  {
+    "id": "p305",
+    "title": "Animation: Cute Animal 55",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a group of fluffy monsters baking a cake, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p213",
+    "title": "Cinematic Video: Space 63",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a high-speed car chase on a rainy highway, with lens flares and cinematic lighting. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p48",
+    "title": "IG Portrait: Golden Hour 48",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a stylish female influencer at a sun-drenched beach in Bali, cinematic warm lighting, shot on 35mm lens, aesthetic, aesthetic."
+  },
+  {
+    "id": "p346",
+    "title": "Animation: Magic 96",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a young wizard practicing spells in a messy room, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p447",
+    "title": "Enhance: Anime 97",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and upscale to 8k resolution. Ensure denoised, crystal clear and hdr, intricate details."
+  },
+  {
+    "id": "p186",
+    "title": "Cinematic Video: Fantasy 36",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a lone astronaut exploring a red desert planet, with volumetric fog rolling in. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p439",
+    "title": "Enhance: Landscape 89",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and make it hyper-realistic and sharp. Ensure masterpiece, best quality and denoised, crystal clear."
+  },
+  {
+    "id": "p335",
+    "title": "Animation: Magic 85",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a young wizard practicing spells in a messy room, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p86",
+    "title": "IG Portrait: Aesthetic 86",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a korean beauty walking down a neon-lit street in Tokyo, golden hour lighting, shot on 35mm lens, highly detailed, vsco girl."
+  },
+  {
+    "id": "p442",
+    "title": "Enhance: Landscape 92",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and add extreme micro-details to the skin and eyes. Ensure perfectly symmetrical facial features and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p165",
+    "title": "Cinematic Video: Space 15",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a lone astronaut exploring a red desert planet, with heavy rain pouring down. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p407",
+    "title": "Enhance: Portrait 57",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and remove all noise and artifacts. Ensure sharp focus, pristine clarity and masterpiece, best quality."
+  },
+  {
+    "id": "p450",
+    "title": "Enhance: Vintage 100",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and add extreme micro-details to the skin and eyes. Ensure denoised, crystal clear and denoised, crystal clear."
+  },
+  {
+    "id": "p177",
+    "title": "Cinematic Video: Space 27",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a futuristic neon cyberpunk city, with epic dramatic stormy skies. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p66",
+    "title": "IG Portrait: City Vibes 66",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a fashion model at a rooftop bar at sunset, neon reflections, Polaroid vintage style, flawless skin, aesthetic."
+  },
+  {
+    "id": "p358",
+    "title": "Enhance: Night 8",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and enhance the lighting and contrast. Ensure hdr, intricate details and masterpiece, best quality."
+  },
+  {
+    "id": "p302",
+    "title": "Animation: Robot 52",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a red panda drinking boba tea, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p201",
+    "title": "Cinematic Video: Space 51",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a high-speed car chase on a rainy highway, with hyper-realistic water reflections. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p246",
+    "title": "Cinematic Video: Action 96",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a high-speed car chase on a rainy highway, with hyper-realistic water reflections. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p118",
+    "title": "IG Portrait: Golden Hour 118",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a young woman in a cozy coffee shop, cinematic warm lighting, shot on iPhone 15 Pro Max, vsco girl, hyperrealistic."
+  },
+  {
+    "id": "p449",
+    "title": "Enhance: Portrait 99",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and remove all noise and artifacts. Ensure hdr, intricate details and denoised, crystal clear."
+  },
+  {
+    "id": "p64",
+    "title": "IG Portrait: Aesthetic 64",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a korean beauty in a modern minimalist apartment, flash photography style, Polaroid vintage style, hyperrealistic, highly detailed."
+  },
+  {
+    "id": "p81",
+    "title": "IG Portrait: Casual 81",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a elegant woman in a modern minimalist apartment, soft natural window light, shot on iPhone 15 Pro Max, vsco girl, hyperrealistic."
+  },
+  {
+    "id": "p357",
+    "title": "Enhance: Anime 7",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and remove all noise and artifacts. Ensure perfectly symmetrical facial features and masterpiece, best quality."
+  },
+  {
+    "id": "p249",
+    "title": "Cinematic Video: Nature 99",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a dense enchanted forest with glowing fairies, with heavy rain pouring down. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p92",
+    "title": "IG Portrait: City Vibes 92",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a elegant woman in a modern minimalist apartment, golden hour lighting, shot on 35mm lens, hyperrealistic, aesthetic."
+  },
+  {
+    "id": "p29",
+    "title": "IG Portrait: Casual 29",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a korean beauty in a modern minimalist apartment, flash photography style, 85mm f/1.4 lens depth of field, aesthetic, hyperrealistic."
+  },
+  {
+    "id": "p99",
+    "title": "IG Portrait: Golden Hour 99",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a stylish female influencer at a sun-drenched beach in Bali, neon reflections, Polaroid vintage style, hyperrealistic, hyperrealistic."
+  },
+  {
+    "id": "p382",
+    "title": "Enhance: Night 32",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and add extreme micro-details to the skin and eyes. Ensure perfectly symmetrical facial features and hdr, intricate details."
+  },
+  {
+    "id": "p140",
+    "title": "IG Portrait: Casual 140",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a korean beauty in a cozy coffee shop, soft natural window light, Polaroid vintage style, trending on instagram, hyperrealistic."
+  },
+  {
+    "id": "p303",
+    "title": "Animation: Robot 53",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a group of fluffy monsters baking a cake, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p391",
+    "title": "Enhance: Anime 41",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and enhance the lighting and contrast. Ensure perfectly symmetrical facial features and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p506",
+    "title": "Productivity: Coding 56",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Analyze this dataset and provide the top 5 actionable insights in bullet points. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p332",
+    "title": "Animation: Robot 82",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a red panda drinking boba tea, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p436",
+    "title": "Enhance: Vintage 86",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and upscale to 8k resolution. Ensure denoised, crystal clear and denoised, crystal clear."
+  },
+  {
+    "id": "p142",
+    "title": "IG Portrait: Golden Hour 142",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a young woman walking down a neon-lit street in Tokyo, soft natural window light, shot on iPhone 15 Pro Max, hyperrealistic, aesthetic."
+  },
+  {
+    "id": "p354",
+    "title": "Enhance: Portrait 4",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and make it hyper-realistic and sharp. Ensure sharp focus, pristine clarity and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p10",
+    "title": "IG Portrait: Aesthetic 10",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a fashion model walking down a neon-lit street in Tokyo, flash photography style, 85mm f/1.4 lens depth of field, highly detailed, hyperrealistic."
+  },
+  {
+    "id": "p113",
+    "title": "IG Portrait: City Vibes 113",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a elegant woman walking down a neon-lit street in Tokyo, flash photography style, Fujifilm X100V, film simulation, highly detailed, aesthetic."
+  },
+  {
+    "id": "p9",
+    "title": "IG Portrait: Casual 9",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a stylish female influencer walking down a neon-lit street in Tokyo, flash photography style, Fujifilm X100V, film simulation, vsco girl, trending on instagram."
+  },
+  {
+    "id": "p319",
+    "title": "Animation: Cute Animal 69",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a magical cat riding a flying broomstick, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p143",
+    "title": "IG Portrait: Golden Hour 143",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a young woman at a sun-drenched beach in Bali, soft natural window light, Polaroid vintage style, aesthetic, highly detailed."
+  },
+  {
+    "id": "p63",
+    "title": "IG Portrait: Aesthetic 63",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a korean beauty at a sun-drenched beach in Bali, flash photography style, Fujifilm X100V, film simulation, aesthetic, vsco girl."
+  },
+  {
+    "id": "p446",
+    "title": "Enhance: Anime 96",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and enhance the lighting and contrast. Ensure perfectly symmetrical facial features and denoised, crystal clear."
+  },
+  {
+    "id": "p65",
+    "title": "IG Portrait: Fashion 65",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a korean beauty in a cozy coffee shop, cinematic warm lighting, 85mm f/1.4 lens depth of field, vsco girl, highly detailed."
+  },
+  {
+    "id": "p132",
+    "title": "IG Portrait: City Vibes 132",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a fashion model in a cozy coffee shop, flash photography style, shot on 35mm lens, aesthetic, highly detailed."
+  },
+  {
+    "id": "p402",
+    "title": "Enhance: Portrait 52",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and remove all noise and artifacts. Ensure masterpiece, best quality and masterpiece, best quality."
+  },
+  {
+    "id": "p166",
+    "title": "Cinematic Video: Cyberpunk 16",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a futuristic neon cyberpunk city, with hyper-realistic water reflections. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p336",
+    "title": "Animation: Magic 86",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a red panda drinking boba tea, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p304",
+    "title": "Animation: Cute Animal 54",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a group of fluffy monsters baking a cake, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p274",
+    "title": "Animation: Robot 24",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a young wizard practicing spells in a messy room, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p32",
+    "title": "IG Portrait: Fashion 32",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a elegant woman at a sun-drenched beach in Bali, flash photography style, Fujifilm X100V, film simulation, trending on instagram, hyperrealistic."
+  },
+  {
+    "id": "p87",
+    "title": "IG Portrait: City Vibes 87",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a elegant woman at a rooftop bar at sunset, soft natural window light, 85mm f/1.4 lens depth of field, vsco girl, trending on instagram."
+  },
+  {
+    "id": "p53",
+    "title": "IG Portrait: Casual 53",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a stylish female influencer at a rooftop bar at sunset, soft natural window light, 85mm f/1.4 lens depth of field, trending on instagram, flawless skin."
+  },
+  {
+    "id": "p503",
+    "title": "Productivity: Data 53",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Senior Full Stack Developer. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p471",
+    "title": "Productivity: SEO 21",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Create a 30-day social media content calendar for a [NICHE] business. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p434",
+    "title": "Enhance: Portrait 84",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and upscale to 8k resolution. Ensure denoised, crystal clear and masterpiece, best quality."
+  },
+  {
+    "id": "p299",
+    "title": "Animation: Robot 49",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a young wizard practicing spells in a messy room, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p279",
+    "title": "Animation: Action 29",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a tiny robot discovering a glowing flower, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p147",
+    "title": "IG Portrait: Casual 147",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a young woman at a rooftop bar at sunset, flash photography style, shot on iPhone 15 Pro Max, trending on instagram, aesthetic."
+  },
+  {
+    "id": "p82",
+    "title": "IG Portrait: Aesthetic 82",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a young woman at a sun-drenched beach in Bali, flash photography style, Fujifilm X100V, film simulation, trending on instagram, flawless skin."
+  },
+  {
+    "id": "p58",
+    "title": "IG Portrait: Fashion 58",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a fashion model at a rooftop bar at sunset, neon reflections, shot on 35mm lens, hyperrealistic, vsco girl."
+  },
+  {
+    "id": "p188",
+    "title": "Cinematic Video: Space 38",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a dense enchanted forest with glowing fairies, with heavy rain pouring down. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p207",
+    "title": "Cinematic Video: Fantasy 57",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a majestic medieval castle on a snowy mountain, with epic dramatic stormy skies. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p180",
+    "title": "Cinematic Video: Nature 30",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a high-speed car chase on a rainy highway, with lens flares and cinematic lighting. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p72",
+    "title": "IG Portrait: Golden Hour 72",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a elegant woman at a rooftop bar at sunset, neon reflections, Polaroid vintage style, aesthetic, aesthetic."
+  },
+  {
+    "id": "p235",
+    "title": "Cinematic Video: Nature 85",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a majestic medieval castle on a snowy mountain, with epic dramatic stormy skies. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p93",
+    "title": "IG Portrait: City Vibes 93",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a stylish female influencer in a cozy coffee shop, flash photography style, shot on iPhone 15 Pro Max, aesthetic, aesthetic."
+  },
+  {
+    "id": "p200",
+    "title": "Cinematic Video: Cyberpunk 50",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a futuristic neon cyberpunk city, with volumetric fog rolling in. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p187",
+    "title": "Cinematic Video: Space 37",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a high-speed car chase on a rainy highway, with hyper-realistic water reflections. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p489",
+    "title": "Productivity: SEO 39",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Chief Marketing Officer. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p3",
+    "title": "IG Portrait: Casual 3",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a young woman at a rooftop bar at sunset, neon reflections, shot on 35mm lens, highly detailed, aesthetic."
+  },
+  {
+    "id": "p114",
+    "title": "IG Portrait: Aesthetic 114",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a elegant woman in a modern minimalist apartment, neon reflections, shot on 35mm lens, flawless skin, flawless skin."
+  },
+  {
+    "id": "p198",
+    "title": "Cinematic Video: Cyberpunk 48",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a majestic medieval castle on a snowy mountain, with lens flares and cinematic lighting. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p167",
+    "title": "Cinematic Video: Fantasy 17",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a majestic medieval castle on a snowy mountain, with hyper-realistic water reflections. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p38",
+    "title": "IG Portrait: City Vibes 38",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a elegant woman in a cozy coffee shop, cinematic warm lighting, Fujifilm X100V, film simulation, trending on instagram, trending on instagram."
+  },
+  {
+    "id": "p241",
+    "title": "Cinematic Video: Space 91",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a majestic medieval castle on a snowy mountain, with heavy rain pouring down. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p283",
+    "title": "Animation: Magic 33",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a tiny robot discovering a glowing flower, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p431",
+    "title": "Enhance: Vintage 81",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and make it hyper-realistic and sharp. Ensure masterpiece, best quality and hdr, intricate details."
+  },
+  {
+    "id": "p421",
+    "title": "Enhance: Anime 71",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and remove all noise and artifacts. Ensure denoised, crystal clear and masterpiece, best quality."
+  },
+  {
+    "id": "p45",
+    "title": "IG Portrait: City Vibes 45",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a beautiful girl in a cozy coffee shop, flash photography style, shot on 35mm lens, hyperrealistic, aesthetic."
+  },
+  {
+    "id": "p454",
+    "title": "Productivity: Data 4",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Senior Full Stack Developer. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p40",
+    "title": "IG Portrait: Casual 40",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a stylish female influencer at a rooftop bar at sunset, flash photography style, Polaroid vintage style, aesthetic, highly detailed."
+  },
+  {
+    "id": "p411",
+    "title": "Enhance: Landscape 61",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and upscale to 8k resolution. Ensure masterpiece, best quality and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p21",
+    "title": "IG Portrait: City Vibes 21",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a stylish female influencer at a rooftop bar at sunset, cinematic warm lighting, 85mm f/1.4 lens depth of field, highly detailed, hyperrealistic."
+  },
+  {
+    "id": "p329",
+    "title": "Animation: Action 79",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a group of fluffy monsters baking a cake, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p510",
+    "title": "Productivity: Coding 60",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Chief Marketing Officer. Create a 30-day social media content calendar for a [NICHE] business. Make sure the tone is witty and humorous."
+  },
+  {
+    "id": "p301",
+    "title": "Animation: Robot 51",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a group of fluffy monsters baking a cake, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p269",
+    "title": "Animation: Magic 19",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a magical cat riding a flying broomstick, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p248",
+    "title": "Cinematic Video: Fantasy 98",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a dense enchanted forest with glowing fairies, with heavy rain pouring down. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p314",
+    "title": "Animation: Cute Animal 64",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a magical cat riding a flying broomstick, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p156",
+    "title": "Cinematic Video: Fantasy 6",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a dense enchanted forest with glowing fairies, with lens flares and cinematic lighting. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p150",
+    "title": "IG Portrait: Golden Hour 150",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a korean beauty at a sun-drenched beach in Bali, golden hour lighting, shot on 35mm lens, hyperrealistic, flawless skin."
+  },
+  {
+    "id": "p134",
+    "title": "IG Portrait: Fashion 134",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a korean beauty at a sun-drenched beach in Bali, golden hour lighting, Polaroid vintage style, hyperrealistic, hyperrealistic."
+  },
+  {
+    "id": "p74",
+    "title": "IG Portrait: City Vibes 74",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a young woman in a modern minimalist apartment, golden hour lighting, Polaroid vintage style, aesthetic, vsco girl."
+  },
+  {
+    "id": "p152",
+    "title": "Cinematic Video: Action 2",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a majestic medieval castle on a snowy mountain, with volumetric fog rolling in. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p171",
+    "title": "Cinematic Video: Cyberpunk 21",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a high-speed car chase on a rainy highway, with volumetric fog rolling in. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p13",
+    "title": "IG Portrait: Fashion 13",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a beautiful girl in a modern minimalist apartment, neon reflections, Polaroid vintage style, flawless skin, hyperrealistic."
+  },
+  {
+    "id": "p139",
+    "title": "IG Portrait: Golden Hour 139",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a elegant woman in a cozy coffee shop, golden hour lighting, shot on 35mm lens, hyperrealistic, flawless skin."
+  },
+  {
+    "id": "p272",
+    "title": "Animation: Cozy 22",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a tiny robot discovering a glowing flower, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p193",
+    "title": "Cinematic Video: Nature 43",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a lone astronaut exploring a red desert planet, with hyper-realistic water reflections. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p509",
+    "title": "Productivity: Health 59",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Chief Marketing Officer. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p287",
+    "title": "Animation: Action 37",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a red panda drinking boba tea, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p36",
+    "title": "IG Portrait: Aesthetic 36",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a young woman in a cozy coffee shop, golden hour lighting, 85mm f/1.4 lens depth of field, highly detailed, vsco girl."
+  },
+  {
+    "id": "p414",
+    "title": "Enhance: Vintage 64",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and add extreme micro-details to the skin and eyes. Ensure denoised, crystal clear and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p2",
+    "title": "IG Portrait: Fashion 2",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a young woman at a sun-drenched beach in Bali, golden hour lighting, Fujifilm X100V, film simulation, trending on instagram, trending on instagram."
+  },
+  {
+    "id": "p255",
+    "title": "Animation: Magic 5",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a tiny robot discovering a glowing flower, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p22",
+    "title": "IG Portrait: Aesthetic 22",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a fashion model in a modern minimalist apartment, cinematic warm lighting, Fujifilm X100V, film simulation, trending on instagram, aesthetic."
+  },
+  {
+    "id": "p292",
+    "title": "Animation: Cute Animal 42",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a red panda drinking boba tea, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p472",
+    "title": "Productivity: Coding 22",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Analyze this dataset and provide the top 5 actionable insights in bullet points. Make sure the tone is witty and humorous."
+  },
+  {
+    "id": "p148",
+    "title": "IG Portrait: Casual 148",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a stylish female influencer in a modern minimalist apartment, flash photography style, 85mm f/1.4 lens depth of field, aesthetic, flawless skin."
+  },
+  {
+    "id": "p28",
+    "title": "IG Portrait: Casual 28",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a young woman in a cozy coffee shop, soft natural window light, shot on 35mm lens, highly detailed, aesthetic."
+  },
+  {
+    "id": "p458",
+    "title": "Productivity: SEO 8",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Create a 30-day social media content calendar for a [NICHE] business. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p477",
+    "title": "Productivity: Data 27",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p117",
+    "title": "IG Portrait: City Vibes 117",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a beautiful girl in a modern minimalist apartment, flash photography style, Fujifilm X100V, film simulation, aesthetic, flawless skin."
+  },
+  {
+    "id": "p85",
+    "title": "IG Portrait: Golden Hour 85",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a beautiful girl walking down a neon-lit street in Tokyo, flash photography style, shot on iPhone 15 Pro Max, vsco girl, trending on instagram."
+  },
+  {
+    "id": "p306",
+    "title": "Animation: Magic 56",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a tiny robot discovering a glowing flower, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p415",
+    "title": "Enhance: Portrait 65",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and enhance the lighting and contrast. Ensure masterpiece, best quality and masterpiece, best quality."
+  },
+  {
+    "id": "p494",
+    "title": "Productivity: Data 44",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Senior Full Stack Developer. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p191",
+    "title": "Cinematic Video: Space 41",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a futuristic neon cyberpunk city, with volumetric fog rolling in. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p267",
+    "title": "Animation: Cute Animal 17",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a young wizard practicing spells in a messy room, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p101",
+    "title": "IG Portrait: Aesthetic 101",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a fashion model in a modern minimalist apartment, cinematic warm lighting, Fujifilm X100V, film simulation, hyperrealistic, trending on instagram."
+  },
+  {
+    "id": "p174",
+    "title": "Cinematic Video: Space 24",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a high-speed car chase on a rainy highway, with epic dramatic stormy skies. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p349",
+    "title": "Animation: Action 99",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a red panda drinking boba tea, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p326",
+    "title": "Animation: Magic 76",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a red panda drinking boba tea, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p133",
+    "title": "IG Portrait: Aesthetic 133",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a korean beauty at a rooftop bar at sunset, neon reflections, Polaroid vintage style, highly detailed, hyperrealistic."
+  },
+  {
+    "id": "p130",
+    "title": "IG Portrait: Fashion 130",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a korean beauty in a cozy coffee shop, neon reflections, shot on iPhone 15 Pro Max, flawless skin, trending on instagram."
+  },
+  {
+    "id": "p251",
+    "title": "Animation: Cozy 1",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a magical cat riding a flying broomstick, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p427",
+    "title": "Enhance: Night 77",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and add extreme micro-details to the skin and eyes. Ensure denoised, crystal clear and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p432",
+    "title": "Enhance: Portrait 82",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and add extreme micro-details to the skin and eyes. Ensure hdr, intricate details and masterpiece, best quality."
+  },
+  {
+    "id": "p218",
+    "title": "Cinematic Video: Cyberpunk 68",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a futuristic neon cyberpunk city, with epic dramatic stormy skies. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p196",
+    "title": "Cinematic Video: Nature 46",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a lone astronaut exploring a red desert planet, with epic dramatic stormy skies. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p237",
+    "title": "Cinematic Video: Action 87",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a dense enchanted forest with glowing fairies, with heavy rain pouring down. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p160",
+    "title": "Cinematic Video: Nature 10",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a dense enchanted forest with glowing fairies, with heavy rain pouring down. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p374",
+    "title": "Enhance: Landscape 24",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and remove all noise and artifacts. Ensure masterpiece, best quality and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p247",
+    "title": "Cinematic Video: Fantasy 97",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a majestic medieval castle on a snowy mountain, with volumetric fog rolling in. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p225",
+    "title": "Cinematic Video: Cyberpunk 75",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a majestic medieval castle on a snowy mountain, with lens flares and cinematic lighting. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p367",
+    "title": "Enhance: Portrait 17",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and upscale to 8k resolution. Ensure masterpiece, best quality and masterpiece, best quality."
+  },
+  {
+    "id": "p212",
+    "title": "Cinematic Video: Nature 62",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a dense enchanted forest with glowing fairies, with lens flares and cinematic lighting. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p352",
+    "title": "Enhance: Portrait 2",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and make it hyper-realistic and sharp. Ensure sharp focus, pristine clarity and denoised, crystal clear."
+  },
+  {
+    "id": "p312",
+    "title": "Animation: Magic 62",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a red panda drinking boba tea, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p485",
+    "title": "Productivity: SEO 35",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Chief Marketing Officer. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p258",
+    "title": "Animation: Action 8",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a red panda drinking boba tea, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p96",
+    "title": "IG Portrait: Golden Hour 96",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a young woman at a sun-drenched beach in Bali, cinematic warm lighting, Fujifilm X100V, film simulation, vsco girl, vsco girl."
+  },
+  {
+    "id": "p6",
+    "title": "IG Portrait: Fashion 6",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a elegant woman walking down a neon-lit street in Tokyo, cinematic warm lighting, shot on 35mm lens, vsco girl, flawless skin."
+  },
+  {
+    "id": "p260",
+    "title": "Animation: Action 10",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a tiny robot discovering a glowing flower, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p12",
+    "title": "IG Portrait: Fashion 12",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a beautiful girl at a rooftop bar at sunset, neon reflections, 85mm f/1.4 lens depth of field, vsco girl, trending on instagram."
+  },
+  {
+    "id": "p228",
+    "title": "Cinematic Video: Action 78",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a futuristic neon cyberpunk city, with hyper-realistic water reflections. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p362",
+    "title": "Enhance: Landscape 12",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and add extreme micro-details to the skin and eyes. Ensure hdr, intricate details and masterpiece, best quality."
+  },
+  {
+    "id": "p77",
+    "title": "IG Portrait: Aesthetic 77",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a elegant woman in a cozy coffee shop, flash photography style, shot on 35mm lens, flawless skin, highly detailed."
+  },
+  {
+    "id": "p363",
+    "title": "Enhance: Portrait 13",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and remove all noise and artifacts. Ensure masterpiece, best quality and hdr, intricate details."
+  },
+  {
+    "id": "p84",
+    "title": "IG Portrait: Golden Hour 84",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a beautiful girl in a cozy coffee shop, neon reflections, Fujifilm X100V, film simulation, vsco girl, highly detailed."
+  },
+  {
+    "id": "p102",
+    "title": "IG Portrait: Casual 102",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a korean beauty in a modern minimalist apartment, cinematic warm lighting, Polaroid vintage style, hyperrealistic, highly detailed."
+  },
+  {
+    "id": "p420",
+    "title": "Enhance: Landscape 70",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and remove all noise and artifacts. Ensure masterpiece, best quality and hdr, intricate details."
+  },
+  {
+    "id": "p390",
+    "title": "Enhance: Portrait 40",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and remove all noise and artifacts. Ensure hdr, intricate details and masterpiece, best quality."
+  },
+  {
+    "id": "p46",
+    "title": "IG Portrait: Fashion 46",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a stylish female influencer at a sun-drenched beach in Bali, golden hour lighting, shot on iPhone 15 Pro Max, trending on instagram, hyperrealistic."
+  },
+  {
+    "id": "p122",
+    "title": "IG Portrait: Casual 122",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a korean beauty at a rooftop bar at sunset, golden hour lighting, 85mm f/1.4 lens depth of field, flawless skin, flawless skin."
+  },
+  {
+    "id": "p399",
+    "title": "Enhance: Night 49",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and add extreme micro-details to the skin and eyes. Ensure perfectly symmetrical facial features and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p20",
+    "title": "IG Portrait: City Vibes 20",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a korean beauty in a modern minimalist apartment, golden hour lighting, Fujifilm X100V, film simulation, hyperrealistic, hyperrealistic."
+  },
+  {
+    "id": "p422",
+    "title": "Enhance: Landscape 72",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and make it hyper-realistic and sharp. Ensure sharp focus, pristine clarity and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p121",
+    "title": "IG Portrait: Fashion 121",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a young woman at a sun-drenched beach in Bali, cinematic warm lighting, Polaroid vintage style, vsco girl, hyperrealistic."
+  },
+  {
+    "id": "p405",
+    "title": "Enhance: Vintage 55",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and add extreme micro-details to the skin and eyes. Ensure hdr, intricate details and hdr, intricate details."
+  },
+  {
+    "id": "p155",
+    "title": "Cinematic Video: Action 5",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a high-speed car chase on a rainy highway, with epic dramatic stormy skies. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p223",
+    "title": "Cinematic Video: Cyberpunk 73",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a lone astronaut exploring a red desert planet, with lens flares and cinematic lighting. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p474",
+    "title": "Productivity: Health 24",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p486",
+    "title": "Productivity: Coding 36",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is concise and data-driven."
+  },
+  {
+    "id": "p221",
+    "title": "Cinematic Video: Fantasy 71",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a majestic medieval castle on a snowy mountain, with heavy rain pouring down. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p199",
+    "title": "Cinematic Video: Cyberpunk 49",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a majestic medieval castle on a snowy mountain, with hyper-realistic water reflections. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p457",
+    "title": "Productivity: Health 7",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Senior Full Stack Developer. Create a 30-day social media content calendar for a [NICHE] business. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p475",
+    "title": "Productivity: Health 25",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Chief Marketing Officer. Analyze this dataset and provide the top 5 actionable insights in bullet points. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p76",
+    "title": "IG Portrait: Fashion 76",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a korean beauty in a cozy coffee shop, flash photography style, Polaroid vintage style, hyperrealistic, hyperrealistic."
+  },
+  {
+    "id": "p276",
+    "title": "Animation: Magic 26",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a young wizard practicing spells in a messy room, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p146",
+    "title": "IG Portrait: Casual 146",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a elegant woman in a modern minimalist apartment, flash photography style, shot on 35mm lens, vsco girl, trending on instagram."
+  },
+  {
+    "id": "p37",
+    "title": "IG Portrait: City Vibes 37",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a fashion model in a cozy coffee shop, soft natural window light, shot on 35mm lens, highly detailed, aesthetic."
+  },
+  {
+    "id": "p424",
+    "title": "Enhance: Vintage 74",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and upscale to 8k resolution. Ensure denoised, crystal clear and hdr, intricate details."
+  },
+  {
+    "id": "p47",
+    "title": "IG Portrait: Fashion 47",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a elegant woman at a rooftop bar at sunset, flash photography style, Fujifilm X100V, film simulation, hyperrealistic, highly detailed."
+  },
+  {
+    "id": "p149",
+    "title": "IG Portrait: Golden Hour 149",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a stylish female influencer at a sun-drenched beach in Bali, cinematic warm lighting, Fujifilm X100V, film simulation, hyperrealistic, trending on instagram."
+  },
+  {
+    "id": "p383",
+    "title": "Enhance: Anime 33",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and upscale to 8k resolution. Ensure sharp focus, pristine clarity and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p318",
+    "title": "Animation: Magic 68",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a group of fluffy monsters baking a cake, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p27",
+    "title": "IG Portrait: Aesthetic 27",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a stylish female influencer in a modern minimalist apartment, soft natural window light, Polaroid vintage style, trending on instagram, flawless skin."
+  },
+  {
+    "id": "p154",
+    "title": "Cinematic Video: Nature 4",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a majestic medieval castle on a snowy mountain, with heavy rain pouring down. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p4",
+    "title": "IG Portrait: City Vibes 4",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a korean beauty at a rooftop bar at sunset, flash photography style, Polaroid vintage style, vsco girl, trending on instagram."
+  },
+  {
+    "id": "p259",
+    "title": "Animation: Cozy 9",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a red panda drinking boba tea, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p34",
+    "title": "IG Portrait: City Vibes 34",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a korean beauty walking down a neon-lit street in Tokyo, soft natural window light, Fujifilm X100V, film simulation, aesthetic, hyperrealistic."
+  },
+  {
+    "id": "p115",
+    "title": "IG Portrait: City Vibes 115",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a fashion model in a cozy coffee shop, soft natural window light, shot on iPhone 15 Pro Max, highly detailed, flawless skin."
+  },
+  {
+    "id": "p222",
+    "title": "Cinematic Video: Nature 72",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a lone astronaut exploring a red desert planet, with hyper-realistic water reflections. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p428",
+    "title": "Enhance: Portrait 78",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and make it hyper-realistic and sharp. Ensure denoised, crystal clear and hdr, intricate details."
+  },
+  {
+    "id": "p341",
+    "title": "Animation: Cute Animal 91",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a tiny robot discovering a glowing flower, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p5",
+    "title": "IG Portrait: Fashion 5",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a stylish female influencer at a sun-drenched beach in Bali, soft natural window light, shot on iPhone 15 Pro Max, vsco girl, vsco girl."
+  },
+  {
+    "id": "p51",
+    "title": "IG Portrait: Golden Hour 51",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a stylish female influencer at a sun-drenched beach in Bali, soft natural window light, 85mm f/1.4 lens depth of field, flawless skin, vsco girl."
+  },
+  {
+    "id": "p1",
+    "title": "IG Portrait: City Vibes 1",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a elegant woman in a modern minimalist apartment, neon reflections, 85mm f/1.4 lens depth of field, highly detailed, highly detailed."
+  },
+  {
+    "id": "p52",
+    "title": "IG Portrait: Aesthetic 52",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a beautiful girl walking down a neon-lit street in Tokyo, neon reflections, Fujifilm X100V, film simulation, highly detailed, vsco girl."
+  },
+  {
+    "id": "p403",
+    "title": "Enhance: Vintage 53",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and upscale to 8k resolution. Ensure perfectly symmetrical facial features and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p205",
+    "title": "Cinematic Video: Cyberpunk 55",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a majestic medieval castle on a snowy mountain, with volumetric fog rolling in. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p288",
+    "title": "Animation: Action 38",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a red panda drinking boba tea, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p15",
+    "title": "IG Portrait: Golden Hour 15",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a young woman in a cozy coffee shop, golden hour lighting, Fujifilm X100V, film simulation, trending on instagram, flawless skin."
+  },
+  {
+    "id": "p78",
+    "title": "IG Portrait: Casual 78",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a fashion model at a sun-drenched beach in Bali, flash photography style, 85mm f/1.4 lens depth of field, hyperrealistic, flawless skin."
+  },
+  {
+    "id": "p195",
+    "title": "Cinematic Video: Fantasy 45",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a lone astronaut exploring a red desert planet, with epic dramatic stormy skies. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p68",
+    "title": "IG Portrait: Golden Hour 68",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a korean beauty at a sun-drenched beach in Bali, golden hour lighting, shot on 35mm lens, trending on instagram, trending on instagram."
+  },
+  {
+    "id": "p111",
+    "title": "IG Portrait: City Vibes 111",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a korean beauty at a rooftop bar at sunset, golden hour lighting, Fujifilm X100V, film simulation, hyperrealistic, aesthetic."
+  },
+  {
+    "id": "p381",
+    "title": "Enhance: Night 31",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and make it hyper-realistic and sharp. Ensure denoised, crystal clear and hdr, intricate details."
+  },
+  {
+    "id": "p70",
+    "title": "IG Portrait: Fashion 70",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a young woman walking down a neon-lit street in Tokyo, golden hour lighting, Fujifilm X100V, film simulation, trending on instagram, highly detailed."
+  },
+  {
+    "id": "p162",
+    "title": "Cinematic Video: Nature 12",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a futuristic neon cyberpunk city, with heavy rain pouring down. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p125",
+    "title": "IG Portrait: Fashion 125",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a fashion model in a cozy coffee shop, cinematic warm lighting, Fujifilm X100V, film simulation, aesthetic, vsco girl."
+  },
+  {
+    "id": "p328",
+    "title": "Animation: Robot 78",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a tiny robot discovering a glowing flower, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p204",
+    "title": "Cinematic Video: Action 54",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a dense enchanted forest with glowing fairies, with epic dramatic stormy skies. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p197",
+    "title": "Cinematic Video: Space 47",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a lone astronaut exploring a red desert planet, with lens flares and cinematic lighting. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p500",
+    "title": "Productivity: Data 50",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is concise and data-driven."
+  },
+  {
+    "id": "p277",
+    "title": "Animation: Magic 27",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a red panda drinking boba tea, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p211",
+    "title": "Cinematic Video: Space 61",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a high-speed car chase on a rainy highway, with heavy rain pouring down. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p71",
+    "title": "IG Portrait: Aesthetic 71",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a beautiful girl at a rooftop bar at sunset, cinematic warm lighting, Polaroid vintage style, hyperrealistic, highly detailed."
+  },
+  {
+    "id": "p17",
+    "title": "IG Portrait: City Vibes 17",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a beautiful girl in a cozy coffee shop, soft natural window light, Fujifilm X100V, film simulation, highly detailed, hyperrealistic."
+  },
+  {
+    "id": "p409",
+    "title": "Enhance: Landscape 59",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and make it hyper-realistic and sharp. Ensure denoised, crystal clear and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p230",
+    "title": "Cinematic Video: Action 80",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a lone astronaut exploring a red desert planet, with hyper-realistic water reflections. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p168",
+    "title": "Cinematic Video: Cyberpunk 18",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a futuristic neon cyberpunk city, with heavy rain pouring down. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p120",
+    "title": "IG Portrait: Aesthetic 120",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a beautiful girl walking down a neon-lit street in Tokyo, neon reflections, shot on iPhone 15 Pro Max, flawless skin, trending on instagram."
+  },
+  {
+    "id": "p11",
+    "title": "IG Portrait: City Vibes 11",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a elegant woman at a rooftop bar at sunset, soft natural window light, shot on 35mm lens, highly detailed, flawless skin."
+  },
+  {
+    "id": "p290",
+    "title": "Animation: Cute Animal 40",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a young wizard practicing spells in a messy room, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p401",
+    "title": "Enhance: Landscape 51",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and upscale to 8k resolution. Ensure hdr, intricate details and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p176",
+    "title": "Cinematic Video: Fantasy 26",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a futuristic neon cyberpunk city, with heavy rain pouring down. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p315",
+    "title": "Animation: Cute Animal 65",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a tiny robot discovering a glowing flower, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p501",
+    "title": "Productivity: SEO 51",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p451",
+    "title": "Productivity: Coding 1",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Create a 30-day social media content calendar for a [NICHE] business. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p410",
+    "title": "Enhance: Landscape 60",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and enhance the lighting and contrast. Ensure perfectly symmetrical facial features and denoised, crystal clear."
+  },
+  {
+    "id": "p57",
+    "title": "IG Portrait: Golden Hour 57",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a beautiful girl in a cozy coffee shop, cinematic warm lighting, Fujifilm X100V, film simulation, highly detailed, hyperrealistic."
+  },
+  {
+    "id": "p385",
+    "title": "Enhance: Landscape 35",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and upscale to 8k resolution. Ensure masterpiece, best quality and denoised, crystal clear."
+  },
+  {
+    "id": "p473",
+    "title": "Productivity: SEO 23",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Senior Full Stack Developer. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p18",
+    "title": "IG Portrait: Golden Hour 18",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a beautiful girl at a rooftop bar at sunset, neon reflections, Polaroid vintage style, trending on instagram, vsco girl."
+  },
+  {
+    "id": "p310",
+    "title": "Animation: Magic 60",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a group of fluffy monsters baking a cake, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p236",
+    "title": "Cinematic Video: Nature 86",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a lone astronaut exploring a red desert planet, with volumetric fog rolling in. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p35",
+    "title": "IG Portrait: Golden Hour 35",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a elegant woman in a modern minimalist apartment, cinematic warm lighting, shot on 35mm lens, aesthetic, hyperrealistic."
+  },
+  {
+    "id": "p291",
+    "title": "Animation: Cute Animal 41",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a tiny robot discovering a glowing flower, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p327",
+    "title": "Animation: Action 77",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a red panda drinking boba tea, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p217",
+    "title": "Cinematic Video: Nature 67",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a dense enchanted forest with glowing fairies, with hyper-realistic water reflections. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p497",
+    "title": "Productivity: Coding 47",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is concise and data-driven."
+  },
+  {
+    "id": "p298",
+    "title": "Animation: Action 48",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a group of fluffy monsters baking a cake, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p443",
+    "title": "Enhance: Night 93",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and remove all noise and artifacts. Ensure masterpiece, best quality and hdr, intricate details."
+  },
+  {
+    "id": "p371",
+    "title": "Enhance: Anime 21",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and upscale to 8k resolution. Ensure denoised, crystal clear and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p324",
+    "title": "Animation: Cozy 74",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a tiny robot discovering a glowing flower, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p484",
+    "title": "Productivity: Health 34",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Analyze this dataset and provide the top 5 actionable insights in bullet points. Make sure the tone is witty and humorous."
+  },
+  {
+    "id": "p106",
+    "title": "IG Portrait: Golden Hour 106",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a fashion model walking down a neon-lit street in Tokyo, cinematic warm lighting, Fujifilm X100V, film simulation, flawless skin, highly detailed."
+  },
+  {
+    "id": "p453",
+    "title": "Productivity: Coding 3",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p170",
+    "title": "Cinematic Video: Action 20",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a majestic medieval castle on a snowy mountain, with heavy rain pouring down. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p30",
+    "title": "IG Portrait: Casual 30",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a beautiful girl at a sun-drenched beach in Bali, cinematic warm lighting, Polaroid vintage style, trending on instagram, aesthetic."
+  },
+  {
+    "id": "p73",
+    "title": "IG Portrait: City Vibes 73",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a elegant woman in a modern minimalist apartment, flash photography style, Fujifilm X100V, film simulation, vsco girl, trending on instagram."
+  },
+  {
+    "id": "p60",
+    "title": "IG Portrait: Casual 60",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a young woman walking down a neon-lit street in Tokyo, golden hour lighting, shot on iPhone 15 Pro Max, aesthetic, vsco girl."
+  },
+  {
+    "id": "p153",
+    "title": "Cinematic Video: Fantasy 3",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a majestic medieval castle on a snowy mountain, with hyper-realistic water reflections. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p487",
+    "title": "Productivity: Marketing 37",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p265",
+    "title": "Animation: Robot 15",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a young wizard practicing spells in a messy room, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p437",
+    "title": "Enhance: Landscape 87",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and upscale to 8k resolution. Ensure hdr, intricate details and hdr, intricate details."
+  },
+  {
+    "id": "p83",
+    "title": "IG Portrait: Casual 83",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a fashion model in a modern minimalist apartment, cinematic warm lighting, 85mm f/1.4 lens depth of field, vsco girl, flawless skin."
+  },
+  {
+    "id": "p67",
+    "title": "IG Portrait: Fashion 67",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a stylish female influencer walking down a neon-lit street in Tokyo, neon reflections, Fujifilm X100V, film simulation, trending on instagram, aesthetic."
+  },
+  {
+    "id": "p88",
+    "title": "IG Portrait: Golden Hour 88",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a korean beauty at a sun-drenched beach in Bali, golden hour lighting, Fujifilm X100V, film simulation, aesthetic, flawless skin."
+  },
+  {
+    "id": "p351",
+    "title": "Enhance: Night 1",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and make it hyper-realistic and sharp. Ensure denoised, crystal clear and masterpiece, best quality."
+  },
+  {
+    "id": "p129",
+    "title": "IG Portrait: Aesthetic 129",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a young woman in a cozy coffee shop, golden hour lighting, 85mm f/1.4 lens depth of field, flawless skin, hyperrealistic."
+  },
+  {
+    "id": "p330",
+    "title": "Animation: Cozy 80",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a magical cat riding a flying broomstick, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p296",
+    "title": "Animation: Magic 46",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a tiny robot discovering a glowing flower, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p243",
+    "title": "Cinematic Video: Cyberpunk 93",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a futuristic neon cyberpunk city, with epic dramatic stormy skies. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p482",
+    "title": "Productivity: SEO 32",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p456",
+    "title": "Productivity: Marketing 6",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Senior Full Stack Developer. Create a 30-day social media content calendar for a [NICHE] business. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p307",
+    "title": "Animation: Cute Animal 57",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a magical cat riding a flying broomstick, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p460",
+    "title": "Productivity: Coding 10",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p364",
+    "title": "Enhance: Night 14",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and upscale to 8k resolution. Ensure sharp focus, pristine clarity and hdr, intricate details."
+  },
+  {
+    "id": "p406",
+    "title": "Enhance: Anime 56",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and enhance the lighting and contrast. Ensure hdr, intricate details and masterpiece, best quality."
+  },
+  {
+    "id": "p355",
+    "title": "Enhance: Night 5",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and upscale to 8k resolution. Ensure denoised, crystal clear and masterpiece, best quality."
+  },
+  {
+    "id": "p7",
+    "title": "IG Portrait: Aesthetic 7",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a elegant woman walking down a neon-lit street in Tokyo, cinematic warm lighting, Fujifilm X100V, film simulation, vsco girl, flawless skin."
+  },
+  {
+    "id": "p26",
+    "title": "IG Portrait: Aesthetic 26",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a fashion model at a rooftop bar at sunset, neon reflections, shot on 35mm lens, hyperrealistic, vsco girl."
+  },
+  {
+    "id": "p105",
+    "title": "IG Portrait: Aesthetic 105",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a fashion model walking down a neon-lit street in Tokyo, neon reflections, Polaroid vintage style, trending on instagram, vsco girl."
+  },
+  {
+    "id": "p261",
+    "title": "Animation: Cute Animal 11",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a red panda drinking boba tea, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p273",
+    "title": "Animation: Action 23",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a young wizard practicing spells in a messy room, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p145",
+    "title": "IG Portrait: Aesthetic 145",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a young woman at a sun-drenched beach in Bali, golden hour lighting, 85mm f/1.4 lens depth of field, highly detailed, vsco girl."
+  },
+  {
+    "id": "p337",
+    "title": "Animation: Cozy 87",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a young wizard practicing spells in a messy room, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p49",
+    "title": "IG Portrait: Casual 49",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a young woman in a modern minimalist apartment, cinematic warm lighting, shot on 35mm lens, vsco girl, flawless skin."
+  },
+  {
+    "id": "p361",
+    "title": "Enhance: Anime 11",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and enhance the lighting and contrast. Ensure sharp focus, pristine clarity and masterpiece, best quality."
+  },
+  {
+    "id": "p41",
+    "title": "IG Portrait: Casual 41",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a beautiful girl in a cozy coffee shop, soft natural window light, Fujifilm X100V, film simulation, highly detailed, aesthetic."
+  },
+  {
+    "id": "p210",
+    "title": "Cinematic Video: Cyberpunk 60",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a majestic medieval castle on a snowy mountain, with lens flares and cinematic lighting. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p480",
+    "title": "Productivity: Coding 30",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p256",
+    "title": "Animation: Action 6",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a young wizard practicing spells in a messy room, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p395",
+    "title": "Enhance: Night 45",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and add extreme micro-details to the skin and eyes. Ensure denoised, crystal clear and denoised, crystal clear."
+  },
+  {
+    "id": "p244",
+    "title": "Cinematic Video: Cyberpunk 94",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a lone astronaut exploring a red desert planet, with heavy rain pouring down. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p185",
+    "title": "Cinematic Video: Nature 35",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a high-speed car chase on a rainy highway, with epic dramatic stormy skies. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p297",
+    "title": "Animation: Action 47",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a magical cat riding a flying broomstick, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p158",
+    "title": "Cinematic Video: Cyberpunk 8",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a dense enchanted forest with glowing fairies, with volumetric fog rolling in. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p309",
+    "title": "Animation: Cute Animal 59",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a young wizard practicing spells in a messy room, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p282",
+    "title": "Animation: Magic 32",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a red panda drinking boba tea, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p496",
+    "title": "Productivity: SEO 46",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Chief Marketing Officer. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p378",
+    "title": "Enhance: Landscape 28",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and upscale to 8k resolution. Ensure perfectly symmetrical facial features and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p444",
+    "title": "Enhance: Landscape 94",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and enhance the lighting and contrast. Ensure denoised, crystal clear and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p131",
+    "title": "IG Portrait: Fashion 131",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a korean beauty in a cozy coffee shop, neon reflections, shot on iPhone 15 Pro Max, vsco girl, trending on instagram."
+  },
+  {
+    "id": "p172",
+    "title": "Cinematic Video: Action 22",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a dense enchanted forest with glowing fairies, with epic dramatic stormy skies. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p320",
+    "title": "Animation: Action 70",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a group of fluffy monsters baking a cake, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p425",
+    "title": "Enhance: Anime 75",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and enhance the lighting and contrast. Ensure sharp focus, pristine clarity and hdr, intricate details."
+  },
+  {
+    "id": "p466",
+    "title": "Productivity: SEO 16",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p492",
+    "title": "Productivity: SEO 42",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Analyze this dataset and provide the top 5 actionable insights in bullet points. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p109",
+    "title": "IG Portrait: Aesthetic 109",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a beautiful girl in a cozy coffee shop, neon reflections, 85mm f/1.4 lens depth of field, vsco girl, aesthetic."
+  },
+  {
+    "id": "p417",
+    "title": "Enhance: Night 67",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and add extreme micro-details to the skin and eyes. Ensure perfectly symmetrical facial features and denoised, crystal clear."
+  },
+  {
+    "id": "p345",
+    "title": "Animation: Robot 95",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a young wizard practicing spells in a messy room, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p42",
+    "title": "IG Portrait: Casual 42",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a stylish female influencer in a cozy coffee shop, cinematic warm lighting, Fujifilm X100V, film simulation, flawless skin, hyperrealistic."
+  },
+  {
+    "id": "p418",
+    "title": "Enhance: Portrait 68",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and make it hyper-realistic and sharp. Ensure masterpiece, best quality and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p285",
+    "title": "Animation: Robot 35",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a red panda drinking boba tea, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p281",
+    "title": "Animation: Cozy 31",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a young wizard practicing spells in a messy room, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p289",
+    "title": "Animation: Robot 39",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a magical cat riding a flying broomstick, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p396",
+    "title": "Enhance: Anime 46",
+    "category": "Image Enhancer",
+    "prompt": "Take this pixelated anime screenshot and add extreme micro-details to the skin and eyes. Ensure perfectly symmetrical facial features and denoised, crystal clear."
+  },
+  {
+    "id": "p481",
+    "title": "Productivity: Data 31",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is witty and humorous."
+  },
+  {
+    "id": "p224",
+    "title": "Cinematic Video: Fantasy 74",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a high-speed car chase on a rainy highway, with hyper-realistic water reflections. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p94",
+    "title": "IG Portrait: City Vibes 94",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a young woman at a sun-drenched beach in Bali, flash photography style, 85mm f/1.4 lens depth of field, aesthetic, vsco girl."
+  },
+  {
+    "id": "p479",
+    "title": "Productivity: SEO 29",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p278",
+    "title": "Animation: Magic 28",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a red panda drinking boba tea, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p470",
+    "title": "Productivity: Marketing 20",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p445",
+    "title": "Enhance: Night 95",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and enhance the lighting and contrast. Ensure perfectly symmetrical facial features and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p270",
+    "title": "Animation: Magic 20",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a red panda drinking boba tea, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p370",
+    "title": "Enhance: Vintage 20",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and make it hyper-realistic and sharp. Ensure masterpiece, best quality and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p215",
+    "title": "Cinematic Video: Space 65",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a majestic medieval castle on a snowy mountain, with volumetric fog rolling in. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p263",
+    "title": "Animation: Cute Animal 13",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a group of fluffy monsters baking a cake, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p505",
+    "title": "Productivity: Health 55",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p376",
+    "title": "Enhance: Anime 26",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and enhance the lighting and contrast. Ensure hdr, intricate details and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p294",
+    "title": "Animation: Action 44",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a red panda drinking boba tea, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p375",
+    "title": "Enhance: Portrait 25",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and make it hyper-realistic and sharp. Ensure denoised, crystal clear and masterpiece, best quality."
+  },
+  {
+    "id": "p455",
+    "title": "Productivity: Marketing 5",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Analyze this dataset and provide the top 5 actionable insights in bullet points. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p164",
+    "title": "Cinematic Video: Action 14",
+    "category": "Cinematic Video",
+    "prompt": "A handheld documentary style of a dense enchanted forest with glowing fairies, with volumetric fog rolling in. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p220",
+    "title": "Cinematic Video: Fantasy 70",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a high-speed car chase on a rainy highway, with epic dramatic stormy skies. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p245",
+    "title": "Cinematic Video: Nature 95",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a high-speed car chase on a rainy highway, with epic dramatic stormy skies. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p495",
+    "title": "Productivity: Coding 45",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is concise and data-driven."
+  },
+  {
+    "id": "p137",
+    "title": "IG Portrait: Fashion 137",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a fashion model in a modern minimalist apartment, soft natural window light, Fujifilm X100V, film simulation, vsco girl, hyperrealistic."
+  },
+  {
+    "id": "p398",
+    "title": "Enhance: Night 48",
+    "category": "Image Enhancer",
+    "prompt": "Take this noisy night photo and add extreme micro-details to the skin and eyes. Ensure masterpiece, best quality and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p452",
+    "title": "Productivity: Data 2",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Create a 30-day social media content calendar for a [NICHE] business. Make sure the tone is concise and data-driven."
+  },
+  {
+    "id": "p286",
+    "title": "Animation: Cozy 36",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a young wizard practicing spells in a messy room, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p119",
+    "title": "IG Portrait: Casual 119",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a fashion model walking down a neon-lit street in Tokyo, neon reflections, 85mm f/1.4 lens depth of field, highly detailed, vsco girl."
+  },
+  {
+    "id": "p110",
+    "title": "IG Portrait: Casual 110",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a fashion model at a sun-drenched beach in Bali, soft natural window light, Fujifilm X100V, film simulation, vsco girl, highly detailed."
+  },
+  {
+    "id": "p400",
+    "title": "Enhance: Anime 50",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and add extreme micro-details to the skin and eyes. Ensure denoised, crystal clear and denoised, crystal clear."
+  },
+  {
+    "id": "p343",
+    "title": "Animation: Robot 93",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a magical cat riding a flying broomstick, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p189",
+    "title": "Cinematic Video: Cyberpunk 39",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a high-speed car chase on a rainy highway, with volumetric fog rolling in. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p23",
+    "title": "IG Portrait: Aesthetic 23",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a fashion model at a sun-drenched beach in Bali, cinematic warm lighting, Polaroid vintage style, flawless skin, trending on instagram."
+  },
+  {
+    "id": "p325",
+    "title": "Animation: Action 75",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a young wizard practicing spells in a messy room, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p157",
+    "title": "Cinematic Video: Fantasy 7",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a majestic medieval castle on a snowy mountain, with lens flares and cinematic lighting. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p151",
+    "title": "Cinematic Video: Fantasy 1",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a lone astronaut exploring a red desert planet, with lens flares and cinematic lighting. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p468",
+    "title": "Productivity: Data 18",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Develop a detailed workout and diet plan for someone who wants to lose 10lbs in a month. Make sure the tone is concise and data-driven."
+  },
+  {
+    "id": "p322",
+    "title": "Animation: Cozy 72",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a tiny robot discovering a glowing flower, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p183",
+    "title": "Cinematic Video: Cyberpunk 33",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a majestic medieval castle on a snowy mountain, with heavy rain pouring down. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p159",
+    "title": "Cinematic Video: Fantasy 9",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a majestic medieval castle on a snowy mountain, with lens flares and cinematic lighting. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p504",
+    "title": "Productivity: Data 54",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Create a 30-day social media content calendar for a [NICHE] business. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p75",
+    "title": "IG Portrait: Aesthetic 75",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a elegant woman at a rooftop bar at sunset, golden hour lighting, Fujifilm X100V, film simulation, trending on instagram, trending on instagram."
+  },
+  {
+    "id": "p331",
+    "title": "Animation: Magic 81",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a red panda drinking boba tea, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p192",
+    "title": "Cinematic Video: Cyberpunk 42",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a dense enchanted forest with glowing fairies, with heavy rain pouring down. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p347",
+    "title": "Animation: Cozy 97",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a magical cat riding a flying broomstick, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p240",
+    "title": "Cinematic Video: Nature 90",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a dense enchanted forest with glowing fairies, with heavy rain pouring down. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p340",
+    "title": "Animation: Magic 90",
+    "category": "Cartoon & Anime",
+    "prompt": "cute claymation style of a group of fluffy monsters baking a cake, warm cozy lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p459",
+    "title": "Productivity: Marketing 9",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Data Scientist. Analyze this dataset and provide the top 5 actionable insights in bullet points. Make sure the tone is empathetic and motivating."
+  },
+  {
+    "id": "p321",
+    "title": "Animation: Action 71",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a magical cat riding a flying broomstick, dreamy magical atmosphere. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p463",
+    "title": "Productivity: SEO 13",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Chief Marketing Officer. Write a comprehensive 1500-word blog post about [TOPIC]. Make sure the tone is witty and humorous."
+  },
+  {
+    "id": "p386",
+    "title": "Enhance: Portrait 36",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and enhance the lighting and contrast. Ensure hdr, intricate details and masterpiece, best quality."
+  },
+  {
+    "id": "p61",
+    "title": "IG Portrait: City Vibes 61",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a korean beauty walking down a neon-lit street in Tokyo, soft natural window light, Polaroid vintage style, flawless skin, highly detailed."
+  },
+  {
+    "id": "p55",
+    "title": "IG Portrait: Fashion 55",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a korean beauty in a cozy coffee shop, neon reflections, Fujifilm X100V, film simulation, hyperrealistic, vsco girl."
+  },
+  {
+    "id": "p284",
+    "title": "Animation: Cozy 34",
+    "category": "Cartoon & Anime",
+    "prompt": "classic 90s Disney 2D animation of a young wizard practicing spells in a messy room, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p467",
+    "title": "Productivity: Data 17",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Analyze this dataset and provide the top 5 actionable insights in bullet points. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p323",
+    "title": "Animation: Cute Animal 73",
+    "category": "Cartoon & Anime",
+    "prompt": "Studio Ghibli style anime of a magical cat riding a flying broomstick, dynamic action poses. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p208",
+    "title": "Cinematic Video: Fantasy 58",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a lone astronaut exploring a red desert planet, with hyper-realistic water reflections. Unreal Engine 5 render, ray tracing, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p19",
+    "title": "IG Portrait: Casual 19",
+    "category": "Instagram Portraits",
+    "prompt": "candid portrait of a young woman in a modern minimalist apartment, flash photography style, shot on iPhone 15 Pro Max, flawless skin, flawless skin."
+  },
+  {
+    "id": "p392",
+    "title": "Enhance: Night 42",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and enhance the lighting and contrast. Ensure masterpiece, best quality and hdr, intricate details."
+  },
+  {
+    "id": "p124",
+    "title": "IG Portrait: Golden Hour 124",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a beautiful girl walking down a neon-lit street in Tokyo, neon reflections, shot on iPhone 15 Pro Max, aesthetic, hyperrealistic."
+  },
+  {
+    "id": "p373",
+    "title": "Enhance: Vintage 23",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and add extreme micro-details to the skin and eyes. Ensure hdr, intricate details and masterpiece, best quality."
+  },
+  {
+    "id": "p344",
+    "title": "Animation: Robot 94",
+    "category": "Cartoon & Anime",
+    "prompt": "vibrant cel-shaded anime of a magical cat riding a flying broomstick, vibrant saturated colors. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p388",
+    "title": "Enhance: Anime 38",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and enhance the lighting and contrast. Ensure denoised, crystal clear and masterpiece, best quality."
+  },
+  {
+    "id": "p184",
+    "title": "Cinematic Video: Action 34",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a high-speed car chase on a rainy highway, with hyper-realistic water reflections. cinematic color grading, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p178",
+    "title": "Cinematic Video: Space 28",
+    "category": "Cinematic Video",
+    "prompt": "A dynamic FPV drone flight of a dense enchanted forest with glowing fairies, with volumetric fog rolling in. shot on RED Monstro 8K VV, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p141",
+    "title": "IG Portrait: Golden Hour 141",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a fashion model at a sun-drenched beach in Bali, golden hour lighting, Polaroid vintage style, vsco girl, aesthetic."
+  },
+  {
+    "id": "p179",
+    "title": "Cinematic Video: Action 29",
+    "category": "Cinematic Video",
+    "prompt": "A low angle push-in of a futuristic neon cyberpunk city, with epic dramatic stormy skies. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p233",
+    "title": "Cinematic Video: Space 83",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a lone astronaut exploring a red desert planet, with hyper-realistic water reflections. IMAX 70mm aspect ratio, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p380",
+    "title": "Enhance: Night 30",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and remove all noise and artifacts. Ensure perfectly symmetrical facial features and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p360",
+    "title": "Enhance: Landscape 10",
+    "category": "Image Enhancer",
+    "prompt": "Take this low res portrait and add extreme micro-details to the skin and eyes. Ensure sharp focus, pristine clarity and perfectly symmetrical facial features."
+  },
+  {
+    "id": "p502",
+    "title": "Productivity: Coding 52",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Life Coach. Analyze this dataset and provide the top 5 actionable insights in bullet points. Make sure the tone is engaging and professional."
+  },
+  {
+    "id": "p24",
+    "title": "IG Portrait: Casual 24",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a stylish female influencer in a cozy coffee shop, flash photography style, 85mm f/1.4 lens depth of field, trending on instagram, hyperrealistic."
+  },
+  {
+    "id": "p54",
+    "title": "IG Portrait: Casual 54",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a young woman at a rooftop bar at sunset, neon reflections, Polaroid vintage style, flawless skin, flawless skin."
+  },
+  {
+    "id": "p359",
+    "title": "Enhance: Night 9",
+    "category": "Image Enhancer",
+    "prompt": "Take this blurry landscape and make it hyper-realistic and sharp. Ensure denoised, crystal clear and denoised, crystal clear."
+  },
+  {
+    "id": "p107",
+    "title": "IG Portrait: Casual 107",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a elegant woman walking down a neon-lit street in Tokyo, golden hour lighting, shot on iPhone 15 Pro Max, hyperrealistic, highly detailed."
+  },
+  {
+    "id": "p144",
+    "title": "IG Portrait: City Vibes 144",
+    "category": "Instagram Portraits",
+    "prompt": "lifestyle photography of a stylish female influencer at a rooftop bar at sunset, golden hour lighting, shot on iPhone 15 Pro Max, trending on instagram, hyperrealistic."
+  },
+  {
+    "id": "p366",
+    "title": "Enhance: Landscape 16",
+    "category": "Image Enhancer",
+    "prompt": "Take this old vintage photo and enhance the lighting and contrast. Ensure sharp focus, pristine clarity and sharp focus, pristine clarity."
+  },
+  {
+    "id": "p123",
+    "title": "IG Portrait: Golden Hour 123",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a korean beauty walking down a neon-lit street in Tokyo, flash photography style, shot on iPhone 15 Pro Max, flawless skin, highly detailed."
+  },
+  {
+    "id": "p461",
+    "title": "Productivity: SEO 11",
+    "category": "Text & Productivity",
+    "prompt": "Act as an Expert SEO Copywriter. Refactor the following React code to use custom hooks and Tailwind CSS. Make sure the tone is highly technical and precise."
+  },
+  {
+    "id": "p95",
+    "title": "IG Portrait: Golden Hour 95",
+    "category": "Instagram Portraits",
+    "prompt": "editorial shot of a young woman at a rooftop bar at sunset, golden hour lighting, shot on iPhone 15 Pro Max, highly detailed, highly detailed."
+  },
+  {
+    "id": "p219",
+    "title": "Cinematic Video: Action 69",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a lone astronaut exploring a red desert planet, with heavy rain pouring down. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p311",
+    "title": "Animation: Magic 61",
+    "category": "Cartoon & Anime",
+    "prompt": "Pixar style 3D animation of a young wizard practicing spells in a messy room, soft pastel lighting. Highly detailed, cute, masterpiece animation sequence, 4k."
+  },
+  {
+    "id": "p234",
+    "title": "Cinematic Video: Space 84",
+    "category": "Cinematic Video",
+    "prompt": "A slow motion tracking shot of a high-speed car chase on a rainy highway, with epic dramatic stormy skies. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p31",
+    "title": "IG Portrait: Golden Hour 31",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a stylish female influencer at a rooftop bar at sunset, golden hour lighting, shot on iPhone 15 Pro Max, highly detailed, aesthetic."
+  },
+  {
+    "id": "p44",
+    "title": "IG Portrait: Aesthetic 44",
+    "category": "Instagram Portraits",
+    "prompt": "fashion photography of a stylish female influencer at a rooftop bar at sunset, golden hour lighting, Polaroid vintage style, hyperrealistic, hyperrealistic."
+  },
+  {
+    "id": "p250",
+    "title": "Cinematic Video: Action 100",
+    "category": "Cinematic Video",
+    "prompt": "A sweeping drone shot of a high-speed car chase on a rainy highway, with lens flares and cinematic lighting. 4k resolution, 60fps, extremely detailed, cinematic masterpiece."
+  },
+  {
+    "id": "p100",
+    "title": "IG Portrait: Aesthetic 100",
+    "category": "Instagram Portraits",
+    "prompt": "selfie style of a young woman in a modern minimalist apartment, flash photography style, Polaroid vintage style, trending on instagram, trending on instagram."
   }
 ]
