@@ -48,36 +48,35 @@ export const AuthProvider = ({ children }) => {
   };
 
   // Sign in with Google
-  const signInWithGoogle = async () => {
-    const result = await signInWithPopup(auth, googleProvider);
-    const user = result.user;
-    
-    // Check if user document exists in Firestore, if not, create it
-    const docRef = doc(db, 'users', user.uid);
-    const docSnap = await getDoc(docRef);
-    
-    if (!docSnap.exists()) {
-      await setDoc(docRef, {
-        email: user.email,
-        displayName: user.displayName || 'Google User',
-        bookmarks: [],
-        createdAt: new Date().toISOString()
-      });
-    }
-    
-    return result;
+  const signInWithGoogle = () => {
+    return signInWithPopup(auth, googleProvider);
   };
 
   // Subscribe to auth state changes and user bookmarks
   useEffect(() => {
     let unsubscribeBookmarks = null;
 
-    const unsubscribeAuth = onAuthStateChanged(auth, (user) => {
+    const unsubscribeAuth = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
       
       if (user) {
-        // Listen to their live bookmarks
+        // Automatically check & create Firestore user document
         const userRef = doc(db, 'users', user.uid);
+        try {
+          const docSnap = await getDoc(userRef);
+          if (!docSnap.exists()) {
+            await setDoc(userRef, {
+              email: user.email,
+              displayName: user.displayName || 'Google User',
+              bookmarks: [],
+              createdAt: new Date().toISOString()
+            });
+          }
+        } catch (err) {
+          console.error("Error checking/creating user doc:", err);
+        }
+
+        // Listen to their live bookmarks
         unsubscribeBookmarks = onSnapshot(userRef, (docSnap) => {
           if (docSnap.exists()) {
             setUserBookmarks(docSnap.data().bookmarks || []);

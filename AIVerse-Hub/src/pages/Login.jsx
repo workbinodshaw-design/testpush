@@ -54,19 +54,23 @@ const Login = () => {
     setLoading(false);
   };
 
-  const handleGoogleLogin = async () => {
-    // DO NOT set state before calling popup, browsers will block it!
-    try {
-      await signInWithGoogle();
-      navigate('/');
-    } catch (err) {
-      console.error("Google Auth Error:", err);
-      if (err.code === 'auth/popup-closed-by-user') {
-        setError('Login cancelled.');
-      } else {
-        setError(err.message || 'Failed to log in with Google.');
-      }
-    }
+  const handleGoogleLogin = () => {
+    // Calling this synchronously ensures browsers do not trigger popup blocking!
+    setError('');
+    signInWithGoogle()
+      .then(() => {
+        navigate('/');
+      })
+      .catch((err) => {
+        console.error("Google Auth Error:", err);
+        if (err.code === 'auth/popup-closed-by-user') {
+          setError('Login cancelled.');
+        } else if (err.code === 'auth/popup-blocked') {
+          setError('Popup blocked by browser. Please allow popups or use another login method.');
+        } else {
+          setError(err.message || 'Failed to log in with Google.');
+        }
+      });
   };
 
   return (
